@@ -1,13 +1,13 @@
 #include <cs50.h>
 #include <stdio.h>
 
-void print_grid(int size);
+int get_size(void);
 void print_grid(int size);
 
 int main(void)
 {
   // Pegar o tamanho
-  int get_size();
+  int n = get_size();
 
   // Mostrando a parede de blocos
   print_grid(n);
