@@ -10,6 +10,7 @@ int main(void)
     int end_size = get_int("End size: ");
 
     // TODO: Calculate number of years until we reach threshold
+    int year = 
 
     // TODO: Print number of years
 }
