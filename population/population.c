@@ -1,12 +1,12 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int start_size();
+int get_size(void);
 
 int main(void)
 {
     // TODO: Prompt for start size
-    start_size
+    int start_size = get_size();
 
     // TODO: Prompt for end size
 
@@ -15,13 +15,13 @@ int main(void)
     // TODO: Print number of years
 }
 
-int start_size(void)
+int get_size(void)
 {
-    int start_size;
+    int n;
     do
     {
-        start_size = get_int("Start size: ");
+        n = get_int("Start size: ");
     }
-    while ( start_size < 9);
-    return start_size;
+    while ( n < 9);
+    return n;
 }
