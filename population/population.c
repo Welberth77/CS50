@@ -17,7 +17,7 @@ int main(void)
     // TODO: Print number of years
 }
 
-int calculator_year(int start, int end)
+int calculator_year(voi)
 {
-    
+
 }
