@@ -26,19 +26,24 @@ int get_height(void)
     return n;
 }
 
+// Imprimindo a pirâmide
 void print_pyramid(int h)
 {
     for (int i = 0; i < h; i++)
     {
-        printf(".");
-    }
+        // Imprimindo espaços antes dos '#' para criar a forma de pirâmide
+        for (int z = 0; z < h - i - 1; z++)
+        {
+            printf(" ");
+        }
 
-    for (int i = 0; i < h; i++)
-    {
+        // Imprimindo '#' para construir a pirâmide
         for (int j = 0; j <= i; j ++)
         {
             printf("#");
         }
+
+        // Indo para a próxima linha após cada linha da pirâmide
         printf("\n");
     }
 }
