@@ -49,9 +49,13 @@ int get_size_end(int i)
 int calculator_year(int start, int end)
 {
     int year = 0;
-    for (int i = start; i >= end; i = i / 3)
+    int lhama = start;
+    do
     {
+        lhama = lhama + lhama / 3;
+        lhama = lhama - lhama / 4;
         year++;
     }
-    return year;
+    while (lhama < end);
+    return lhama;
 }
