@@ -6,8 +6,11 @@ int calculator_year();
 int main(void)
 {
     // TODO: Prompt for start size
-    int start_size = get_int("Start size: ");
-
+    while (true)
+    {
+        int start_size = get_int("Start size: ");
+        break;
+    }
     // TODO: Prompt for end size
     int end_size = get_int("End size: ");
 
@@ -22,6 +25,6 @@ int calculator_year(int start, int end)
     int n = start;
     do
     {
-        n / 
+        n /
     }
 }
