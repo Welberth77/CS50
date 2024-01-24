@@ -1,14 +1,16 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int get_size(void);
+int get_size_start(void);
+int get_size_end(void);
 
 int main(void)
 {
     // TODO: Prompt for start size
-    int start_size = get_size();
+    int start_size = get_size_start();
 
     // TODO: Prompt for end size
+    int end_size = get_size_end();
 
     // TODO: Calculate number of years until we reach threshold
 
@@ -16,7 +18,7 @@ int main(void)
 }
 
 // Get start size
-int get_size(void)
+int get_size_start(void)
 {
     int n;
     do
@@ -27,13 +29,14 @@ int get_size(void)
     return n;
 }
 
+
 // Get end size
-int get_size(void)
+int get_size_end(void)
 {
     int n;
     do
     {
-        n = get_int("Start size: ");
+        n = get_int("End size: ");
     }
     while ( n < 9);
     return n;
