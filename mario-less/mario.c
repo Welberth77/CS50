@@ -30,11 +30,19 @@ void print_pyramid(int h)
 {
     for (int i = 0; i < h; i++)
     {
-        printf("#\n");
+        // Imprimindo espaços antes dos '#' para criar a forma de pirâmide
+        for (int j = 0; j < h - i - 1; j++)
+        {
+            printf(" ");
+        }
+
+        // Imprimindo '#' para construir a pirâmide
         for (int j = 0; j <= i; j++)
         {
             printf("#");
         }
+
+        // Indo para a próxima linha após cada linha da pirâmide
+        printf("\n");
     }
-    printf("\n");
 }
