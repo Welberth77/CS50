@@ -3,6 +3,7 @@
 
 int get_size_start(void);
 int get_size_end(int i);
+int calculator_year(int start, int end);
 
 int main(void)
 {
@@ -40,4 +41,10 @@ int get_size_end(int i)
     }
     while (n < i);
     return n;
+}
+
+// Calculator years
+int calculator_year(int start, int end)
+{
+
 }
