@@ -37,7 +37,7 @@ int main(void)
 
 int get_cents(void)
 {
-    // TODO
+    // Pedindo e valodando valor do troco
     int n;
     do
     {
@@ -49,7 +49,7 @@ int get_cents(void)
 
 int calculate_quarters(int cents)
 {
-    // TODO
+    // Calculando moeda de 25
     int cont = 0;
     do
     {
@@ -62,7 +62,7 @@ int calculate_quarters(int cents)
 
 int calculate_dimes(int cents)
 {
-    // TODO
+    // Calculando moeda de 10
     int cont = 0;
     do
     {
@@ -75,7 +75,7 @@ int calculate_dimes(int cents)
 
 int calculate_nickels(int cents)
 {
-    // TODO
+    // Calculando moeda de 5
     int cont = 0;
     do
     {
@@ -88,7 +88,7 @@ int calculate_nickels(int cents)
 
 int calculate_pennies(int cents)
 {
-    // TODO
+    // Calculando moeda de 1
     int cont = 0;
     do
     {
