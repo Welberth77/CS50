@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int get_size_start(void);
-int get_size_end(void);
+int get_size_end(int i);
 
 int main(void)
 {
