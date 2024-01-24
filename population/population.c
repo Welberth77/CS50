@@ -48,14 +48,5 @@ int get_size_end(int i)
 // Calculator years
 int calculator_year(int start, int end)
 {
-    int year = 0;
-    int lhama = start;
-    do
-    {
-        lhama = lhama + lhama / 3;
-        lhama = lhama - lhama / 4;
-        year++;
-    }
-    while (lhama < end);
-    return lhama;
+    
 }
