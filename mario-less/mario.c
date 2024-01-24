@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 int get_height(void);
+void print_pyramid(int h);
 
 int main(void)
 {
@@ -9,6 +10,7 @@ int main(void)
     int height = get_height();
 
     // Imprimindo pirâmide
+    print_pyramid(height);
 }
 
 
@@ -24,4 +26,10 @@ int get_height(void)
     return n;
 }
 
-void print_
+void print_pyramid(int h)
+{
+    for (int i = 0; i == h; i++)
+    {
+        printf("#");
+    }
+}
