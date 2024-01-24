@@ -15,6 +15,19 @@ int main(void)
     // TODO: Print number of years
 }
 
+// Get start size
+int get_size(void)
+{
+    int n;
+    do
+    {
+        n = get_int("Start size: ");
+    }
+    while ( n < 9);
+    return n;
+}
+
+// Get end size
 int get_size(void)
 {
     int n;
