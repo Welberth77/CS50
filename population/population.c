@@ -46,5 +46,5 @@ int get_size_end(int i)
 // Calculator years
 int calculator_year(int start, int end)
 {
-
+    for (start; start >= end; start = )
 }
