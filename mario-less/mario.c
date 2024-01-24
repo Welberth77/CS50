@@ -8,7 +8,7 @@ int main(void)
     // Pedindo altura, entre 4 e 8 e maior que 0
     int height = get_height();
 
-    //
+    // Imprimindo pirâmide
 }
 
 // Obtendo e válidando altura
