@@ -17,7 +17,7 @@ int main(void)
    int  year = calculator_year(start_size, end_size);
 
     // TODO: Print number of years
-    printf(year);
+    printf("%i", year);
 }
 
 // Get start size
@@ -49,9 +49,9 @@ int get_size_end(int i)
 int calculator_year(int start, int end)
 {
     int year = 0;
-    for (start; start >= end; start = start / 3)
+    for (int start; start >= end; start = start / 3)
     {
-        year++
+        year++;
     }
     return year;
 }
