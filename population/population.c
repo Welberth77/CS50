@@ -10,7 +10,7 @@ int main(void)
     int start_size = get_size_start();
 
     // TODO: Prompt for end size
-    int end_size = get_size_end(start_size);
+    int end_size = get_size_end(int start_size);
 
     // TODO: Calculate number of years until we reach threshold
 
