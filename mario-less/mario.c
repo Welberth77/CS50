@@ -14,11 +14,10 @@ int main(void)
 // Obtendo e válidando altura
 int get_height(void)
 {
-    int n;
-    do
+    int n = 0;
+    while (n < 1 || n > 8)
     {
         n = get_int("Height: ");
     }
-    while(n < 1 || n > 8);
     return n;
 }
