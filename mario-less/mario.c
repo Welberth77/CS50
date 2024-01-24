@@ -11,13 +11,15 @@ int main(void)
     // Imprimindo pirâmide
 }
 
+
 // Obtendo e válidando altura
 int get_height(void)
 {
-    int n = 0;
-    while (n < 1 || n > 8)
+    int n;
+    do
     {
         n = get_int("Height: ");
     }
+    while (n < 1 || n > 8);
     return n;
 }
