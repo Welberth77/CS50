@@ -48,5 +48,9 @@ int get_size_end(int i)
 // Calculator years
 int calculator_year(int start, int end)
 {
-    
+    int n;
+    do
+    {
+        n = n + (n / 3) - (n / 4);
+    }
 }
