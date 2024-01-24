@@ -5,15 +5,13 @@ int main(void)
 {
     // TODO: Prompt for start size
     int start_size;
-    
-    while (true)
+    do
     {
-        int start_size = get_int("Start size: ");
-        if (start_size >= 9)
-        {
-            break;
-        }
+        start_size = get_int("Start size: ");
     }
+    while (start_size < 9);
+    return start_size;
+
     printf("%i\n", start_size);
     // TODO: Prompt for end size
 
