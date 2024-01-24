@@ -33,7 +33,7 @@ void print_pyramid(int h)
         printf("#\n");
         for (int j = 0; j < i; j++)
         {
-            printf("#-");
+            printf("o");
         }
     }
     printf("\n");
