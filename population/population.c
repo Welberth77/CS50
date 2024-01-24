@@ -14,10 +14,10 @@ int main(void)
     int end_size = get_size_end(start_size);
 
     // TODO: Calculate number of years until we reach threshold
-   int  year = calculator_year(start_size, end_size);
+    int  year = calculator_year(start_size, end_size);
 
     // TODO: Print number of years
-    printf("%i", year);
+    printf("%i\n", year);
 }
 
 // Get start size
