@@ -30,6 +30,11 @@ void print_pyramid(int h)
 {
     for (int i = 0; i < h; i++)
     {
+        printf(".");
+    }
+
+    for (int i = 0; i < h; i++)
+    {
         for (int j = 0; j <= i; j ++)
         {
             printf("#");
