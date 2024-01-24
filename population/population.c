@@ -53,7 +53,7 @@ int calculator_year(int start, int end)
     do
     {
         n = n + (n / 3) - (n / 4);
-        int year++;
+        year++;
     }
     while(n < end);
     return year;
