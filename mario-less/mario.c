@@ -13,7 +13,6 @@ int main(void)
     print_pyramid(height);
 }
 
-
 // Obtendo e válidando altura
 int get_height(void)
 {
@@ -38,7 +37,7 @@ void print_pyramid(int h)
         }
 
         // Imprimindo '#' para construir a pirâmide
-        for (int j = 0; j <= i; j ++)
+        for (int j = 0; j <= i; j++)
         {
             printf("#");
         }
