@@ -50,51 +50,79 @@ int get_cents(void)
 int calculate_quarters(int cents)
 {
     // Calculando moeda de 25
-    int cont = 0;
-    do
+    if (cents < 25)
     {
-        cents = cents - 25;
-        cont++;
+        return 0;
     }
-    while (cents >= 25);
-    return cont;
+    else
+    {
+        int cont = 0;
+        do
+        {
+            cents = cents - 25;
+            cont++;
+        }
+        while (cents >= 25);
+        return cont;
+    }
 }
 
 int calculate_dimes(int cents)
 {
     // Calculando moeda de 10
-    int cont = 0;
-    do
+    if (cents < 10)
     {
-        cents = cents - 10;
-        cont++;
+        return 0;
     }
-    while (cents >= 10);
-    return cont;
+    else
+    {
+        int cont = 0;
+        do
+        {
+            cents = cents - 10;
+            cont++;
+        }
+        while (cents >= 10);
+        return cont;
+    }
 }
 
 int calculate_nickels(int cents)
 {
     // Calculando moeda de 5
-    int cont = 0;
-    do
+    if (cents < 5)
     {
-        cents = cents - 5;
-        cont++;
+        return 0;
     }
-    while (cents >= 5);
-    return cont;
+    else
+    {
+        int cont = 0;
+        do
+        {
+            cents = cents - 5;
+            cont++;
+        }
+        while (cents >= 5);
+        return cont;
+    }
 }
 
 int calculate_pennies(int cents)
 {
     // Calculando moeda de 1
-    int cont = 0;
-    do
+    if (cents < 1)
     {
-        cents = cents - 1;
-        cont++;
+        return 0;
     }
-    while (cents >= 1);
-    return cont;
+    else
+    {
+        int cont = 0;
+        do
+        {
+            cents = cents - 1;
+            cont++;
+        }
+        while (cents >= 1);
+        return cont;
+    }
 }
