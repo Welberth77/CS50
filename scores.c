@@ -6,5 +6,5 @@ int main(void)
     int score2 = 73;
     int score3 = 33;
 
-    printf("Média: %i\n", (score1 + score2 + score3) / 3);
+    printf("Média: %f\n", (score1 + score2 + score3) / 3.0);
 }
