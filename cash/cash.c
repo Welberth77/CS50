@@ -1,3 +1,4 @@
+// Sistema de troco, é necessário que o software devolva o troco com o mínimo de moedas possíveis
 #include <cs50.h>
 #include <stdio.h>
 

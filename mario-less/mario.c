@@ -1,3 +1,4 @@
+// Construindo escada crescente de acordo com o número que o usuário digitar
 #include <cs50.h>
 #include <stdio.h>
 
