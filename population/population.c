@@ -7,20 +7,20 @@ int calculator_year(int start, int end);
 
 int main(void)
 {
-    // TODO: Prompt for start size
+    // Pedindo tamanho inicial
     int start_size = get_size_start();
 
-    // TODO: Prompt for end size
+    // Pedindo tamanho final
     int end_size = get_size_end(start_size);
 
-    // TODO: Calculate number of years until we reach threshold
+    // TODO: Calculando número de anos que until we reach threshold
     int year = calculator_year(start_size, end_size);
 
-    // TODO: Print number of years
+    // Escrevendo o número de anos
     printf("Years: %i\n", year);
 }
 
-// Get start size
+// Validando tamanho inicial
 int get_size_start(void)
 {
     int n;
@@ -33,7 +33,7 @@ int get_size_start(void)
 }
 
 
-// Get end size
+// Validando tamanho final
 int get_size_end(int i)
 {
     int n;
@@ -45,7 +45,7 @@ int get_size_end(int i)
     return n;
 }
 
-// Calculator years
+// Calculando anos
 int calculator_year(int start, int end)
 {
     int year = 0;
