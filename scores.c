@@ -18,7 +18,7 @@ int main(void)
 }
 
 // Calculando a média
-float media(int array[])
+float media(int array[]) 
 {
     int sum = 0;
     for (int i = 0; i < N; i++)
