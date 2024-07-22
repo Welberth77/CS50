@@ -14,7 +14,7 @@ int main(void)
     for (int i = 0; i < 3; i++)
     {
         // Solicitando notas para cada lugar do array
-        scores[i] = get_int("Score: ");
+        scores[i] = get_int("Score %i: ", i + 1);
     }
 
     // Printando a média e chamando a função média
