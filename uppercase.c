@@ -14,13 +14,13 @@ int main(void) {
     int length = strlen(s);
 
     for (int i = 0; i < length; i++) {
+        // Função no ctype que já faz isso
+        // printf("%c", toupper(s[i]));
+
         // Verificando se o caractere é minúsculo
         if (s[i] >= 'a' && s[i] <= 'z') {
             // Transformando em caractere mainúsculo
             printf("%c", s[i] - 32);
-
-            // Função no ctype que já faz isso
-            // printf("%c", toupper(s[i]));
         }
         else {
             printf("%c", s[i]);
