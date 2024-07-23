@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 
 int string_length(string s);
@@ -8,8 +9,13 @@ int string_length(string s);
 int main(void) {
     // Solicitando nome ao usuário
     string name = get_string("Nome: ");
+    // Chamando função manual
     int length = string_length(name);
 
+    printf("%i\n", length);
+
+    // Chamando função strlen disponível no string.h
+    int length = strlen(name);
     printf("%i\n", length);
 
 }
