@@ -1,3 +1,5 @@
+// Numerando erros encontrados, quando retornamos 0 quer dizer que tudo deu certo
+// Quando retornamos valores acima de zero são os tipos de erros encontrados no código, deu algo errado
 #include <cs50.h>
 #include <stdio.h>
 
