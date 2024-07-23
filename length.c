@@ -8,8 +8,9 @@ int string_length(string s);
 int main(void) {
     // Solicitando nome ao usuário
     string name = get_string("Nome: ");
+    int length = string_length(name);
 
-    printf("%i\n", string_length(name));
+    printf("%i\n", length);
 
 }
 
