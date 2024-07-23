@@ -11,11 +11,10 @@ int main(void) {
     string name = get_string("Nome: ");
     // Chamando função manual
     int length = string_length(name);
-
     printf("%i\n", length);
 
     // Chamando função strlen disponível no string.h
-    int length = strlen(name);
+    int length_2 = strlen(name);
     printf("%i\n", length);
 
 }
