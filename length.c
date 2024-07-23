@@ -2,11 +2,14 @@
 #include <stdio.h>
 
 
+int string_length(string s);
+
+
 int main(void) {
     // Solicitando nome ao usuário
     string name = get_string("Nome: ");
 
-    int string_length(name);
+    printf("%i\n", string_length(name));
 
 }
 
@@ -15,7 +18,7 @@ int string_length(string s) {
     int n = 0;
     // Enquanto o caractere não chegar ao \0 continua a contagem
     // Lembrando que toda string termina com \0
-    while (name[n] != '\0') {
+    while (s[n] != '\0') {
         // Atribuindo valor ao n
         n++;
     }
