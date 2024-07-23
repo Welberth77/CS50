@@ -9,7 +9,7 @@ int main(void) {
 
     int length = strlen(s);
     for (int i = 0; i < length; i++) {
-        printf("%c", i);
+        printf("%c", s[i]);
     }
     printf("\n");
 }
