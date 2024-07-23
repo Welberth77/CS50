@@ -6,6 +6,11 @@ int main(void) {
     // Solicitando nome ao usuário
     string name = get_string("Nome: ");
 
+    int string_length(name);
+
+}
+
+int string_length(string s) {
     // Definindo variável inicial
     int n = 0;
     // Enquanto o caractere não chegar ao \0 continua a contagem
@@ -15,6 +20,7 @@ int main(void) {
         n++;
     }
 
-    // Printando o número de caracteres
-    printf("%i\n", n);
+    // retornando o número de caracteres
+    return n;
+
 }
