@@ -1,3 +1,5 @@
+// Tranformando textos em maiúsculos
+// É importante saber que na tabela ascii os caracteres minusculos e maiusculos tem uma diferença de 32
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
