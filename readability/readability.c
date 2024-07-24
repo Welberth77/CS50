@@ -22,5 +22,6 @@ int main(void)
 
 int contar_letras(string text)
 {
-    // Retornar o número de letras do texto
+    int letras = 0;
+    
 }
