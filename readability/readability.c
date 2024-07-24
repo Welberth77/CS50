@@ -16,13 +16,15 @@ int main(void)
     // Entrada do texto
     string text = get_string("Text: ");
 
-    // Contar o número de letras, palavras e frases no texto
+    // Contar o número de letras
     int total_letras = contar_letras(text);
     printf("%i\n", total_letras);
 
+    // Contar número de palavras
     int total_palavras = contar_palavras(text);
     printf("%i\n", total_palavras);
 
+    // Contar número de frases
     int total_frases = contar_frases(text);
     printf("%i\n", total_frases);
 
