@@ -67,7 +67,7 @@ int contar_palavras(string text)
     for (int i = 0; i < length; i++)
     {
         // Verificando se é espaço
-        if (isalpha(text[i]) == 0)
+        if (isblank(text[i]) == 0)
         {
             // Acrescentando +1 para as palavras
             palavras++;
