@@ -25,7 +25,8 @@ int main(void)
 
     // Calculando nível do texto
     // Fórmula index = 0.0588 * L - 0.296 * S - 15.8
-    // onde (L) é o número médio de letras por 100 palavras no texto, e (S) é o número médio de frases por 100 palavras no texto.
+    // onde (L) é o número médio de letras por 100 palavras no texto
+    // (S) é o número médio de frases por 100 palavras no texto.
     float L = ((float) total_letras / total_palavras) * 100;
     float S = ((float) total_frases / total_palavras) * 100;
 
@@ -85,7 +86,6 @@ int contar_palavras(string text)
     }
     return palavras;
 }
-
 
 // Palavras que terminem com (., !, ?) serão consideradas fim de frases
 int contar_frases(string text)
