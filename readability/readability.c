@@ -8,6 +8,7 @@
 
 int contar_letras(string text);
 int contar_palavras(string text);
+int contar_frases(string text);
 
 
 int main(void)
@@ -22,6 +23,8 @@ int main(void)
     int total_palavras = contar_palavras(text);
     printf("%i\n", total_palavras);
 
+    int total_frases = contar_frases(text);
+    printf("%i\n", total_frases);
 
 
     // Calculando nível do texto
@@ -75,13 +78,17 @@ int contar_palavras(string text)
 // Palavras que terminem com (., !, ?) serão consideradas fim de frases
 int contar_frases(string text)
 {
+    // Variável para as frases
     int frases = 0;
 
+    // Recebendo tamanho do texto
     int length = strlen(text);
     for (int i = 0; i < length; i++)
     {
+        // Verificanod se existe algum desses caracteres
         if (text[i] == '.' || text[i] == '!' || text[i] == '?')
         {
+            // Acrescentando +1 em frase
             frases++;
         }
     }
