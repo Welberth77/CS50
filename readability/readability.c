@@ -35,9 +35,12 @@ int main(void)
     float L = (total_letras / total_palavras) * 100;
     float S = (total_frases / total_palavras) * 100;
 
-    
+    int grade = 0.0588 * L * 0.296 * S - 15.8;
 
     // Imprimindo nota e nível do texto
+    printf("%i\n", grade);
+    grade = round(grade);
+    printf("%i\n", grade);
 }
 
 int contar_letras(string text)
