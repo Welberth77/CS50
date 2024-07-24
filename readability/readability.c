@@ -31,7 +31,7 @@ int main(void)
     long L = (total_letras / total_palavras) * 100;
     long S = (total_frases / total_palavras) * 100;
 
-    int grade = 0.0588 * L * 0.296 * S - 15.8;
+    int grade = round(0.0588 * L * 0.296 * S - 15.8);
 
     // Imprimindo nota e nível do texto
     if (grade < 1)
