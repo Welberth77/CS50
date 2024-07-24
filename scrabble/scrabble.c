@@ -17,12 +17,23 @@ int main(void)
 
     // Calcular resultado
     int score_player1 = compute_score(word_player1);
-    printf("%i\n", score_player1);
     int score_player2 = compute_score(word_player2);
-    printf("%i\n", score_player2);
 
-    // Imprimir resultado
+    // Imprimir vencedor
+    if (score_player1 > score_player2)
+    {
+        printf("Player 1 ganhou com %i pontos\n", score_player1);
+    }
+    else if (score_player2 > score_player1)
+    {
+        printf("Player 2 ganhou com %i pontos\n", score_player2);
+    }
+    else
+    {
+        printf("Empate!\n");
+    }
 }
+
 
 int compute_score(string word) {
     // Variável para armazenar pontuação
