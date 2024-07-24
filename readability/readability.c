@@ -6,12 +6,17 @@
 #import <string.h>
 
 
+int contar_letras(string text);
+
+
 int main(void)
 {
     // Entrada do texto
     string text = get_string("Text: ");
 
     // Contar o número de letras, palavras e frases no texto
+    int total_letras = contar_letras(text);
+    printf("%i\n", total_letras);
 
     // Calculando nível do texto
     // Fórmula index = 0.0588 * L - 0.296 * S - 15.8
@@ -22,6 +27,19 @@ int main(void)
 
 int contar_letras(string text)
 {
+    // Variavel para armazenar quantidade de letras
     int letras = 0;
-    
+
+    int length = strlen(text);
+    // Loop que passa letra por letra
+    for (int i = 0; i < length; i++)
+    {
+        // Verificando se o caractere é um texto
+        if (isalpha(text[i]) != 0)
+        {
+            // Acrescentando 1 ao número de letras
+            letras++;
+        }
+    }
+    return letras;
 }
