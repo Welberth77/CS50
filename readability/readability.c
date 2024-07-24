@@ -5,11 +5,9 @@
 #import <stdio.h>
 #import <string.h>
 
-
 int contar_letras(string text);
 int contar_palavras(string text);
 int contar_frases(string text);
-
 
 int main(void)
 {
