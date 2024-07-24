@@ -22,15 +22,15 @@ int main(void)
     // Imprimir vencedor
     if (score_player1 > score_player2)
     {
-        printf("Player 1 ganhou com %i pontos\n", score_player1);
+        printf("Player 1 wins");
     }
     else if (score_player2 > score_player1)
     {
-        printf("Player 2 ganhou com %i pontos\n", score_player2);
+        printf("Player 2 wins");
     }
     else
     {
-        printf("Empate!\n");
+        printf("Tie!\n");
     }
 }
 
