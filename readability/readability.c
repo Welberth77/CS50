@@ -53,7 +53,7 @@ int contar_letras(string text)
     return letras;
 }
 
-
+// Tem algo errado
 // Contamos os espaços que existem, assim descobrimos as palavras separadas por espaços
 int contar_palavras(string text)
 {
