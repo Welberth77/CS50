@@ -35,6 +35,8 @@ int main(void)
     float L = (total_letras / total_palavras) * 100;
     float S = (total_frases / total_palavras) * 100;
 
+    
+
     // Imprimindo nota e nível do texto
 }
 
