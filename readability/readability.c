@@ -22,6 +22,8 @@ int main(void)
     int total_palavras = contar_palavras(text);
     printf("%i\n", total_palavras);
 
+
+
     // Calculando nível do texto
     // Fórmula index = 0.0588 * L - 0.296 * S - 15.8
     // onde (L) é o número médio de letras por 100 palavras no texto, e (S) é o número médio de frases por 100 palavras no texto.
@@ -52,6 +54,7 @@ int contar_letras(string text)
 // Contamos os espaços que existem, assim descobrimos as palavras separadas por espaços
 int contar_palavras(string text)
 {
+    // Váriavel para armazenar as palavras
     int palavras = 1;
 
     int length = strlen(text);
@@ -67,4 +70,17 @@ int contar_palavras(string text)
 
 
 // Palavras que terminem com (., !, ?) serão consideradas fim de frases
+int contar_frases(string text)
+{
+    int frases = 0;
 
+    int length = strlen(text);
+    for (int i = 0; i < length; i++)
+    {
+        if (text[i] == '.' || text[i] == '!' || text[i] == '?')
+        {
+            frases++;
+        }
+    }
+    return frases;
+}
