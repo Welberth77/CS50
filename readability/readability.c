@@ -28,8 +28,8 @@ int main(void)
     // Calculando nível do texto
     // Fórmula index = 0.0588 * L - 0.296 * S - 15.8
     // onde (L) é o número médio de letras por 100 palavras no texto, e (S) é o número médio de frases por 100 palavras no texto.
-    long L = ((float) total_letras / (float) total_palavras) * 100;
-    long S = ((float) total_frases / (float) total_palavras) * 100;
+    long L = ((long) total_letras / (long) total_palavras) * 100;
+    long S = ((long) total_frases / (long) total_palavras) * 100;
 
     int grade = round(0.0588 * L * 0.296 * S - 15.8);
 
