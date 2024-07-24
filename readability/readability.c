@@ -19,3 +19,8 @@ int main(void)
 
     // Imprimindo nota e nível do texto
 }
+
+int contar_letras(string text)
+{
+    // Retornar o número de letras do texto
+}
