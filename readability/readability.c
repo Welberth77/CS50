@@ -38,9 +38,18 @@ int main(void)
     int grade = 0.0588 * L * 0.296 * S - 15.8;
 
     // Imprimindo nota e nível do texto
-    printf("%i\n", grade);
-    grade = round(grade);
-    printf("%i\n", grade);
+    if (grade < 1)
+    {
+        printf("Before Grade 1\n");
+    }
+    else if (grade > 16)
+    {
+        printf("Grade 16+\n");
+    }
+    else
+    {
+        printf("Grade %i\n", grade);
+    }
 }
 
 int contar_letras(string text)
