@@ -32,6 +32,8 @@ int main(void)
     // Calculando nível do texto
     // Fórmula index = 0.0588 * L - 0.296 * S - 15.8
     // onde (L) é o número médio de letras por 100 palavras no texto, e (S) é o número médio de frases por 100 palavras no texto.
+    int L = (total_letras / total_palavras) * 100;
+    int S = (total_frases / total_palavras) * 100;
 
     // Imprimindo nota e nível do texto
 }
