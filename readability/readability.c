@@ -9,6 +9,9 @@
 int main(void)
 {
     // Entrada do texto
+    string text = get_string("Text: ");
+
+    // Contar o número de letras, palavras e frases no texto
 
     // Calculando nível do texto
     // Fórmula index = 0.0588 * L - 0.296 * S - 15.8
