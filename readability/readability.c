@@ -32,7 +32,7 @@ int main(void)
 int contar_letras(string text)
 {
     // Variavel para armazenar quantidade de letras
-    int letras = 1;
+    int letras = 0;
 
     int length = strlen(text);
     // Loop que passa letra por letra
@@ -51,7 +51,7 @@ int contar_letras(string text)
 
 int contar_palavras(string text)
 {
-    int palavras = 0;
+    int palavras = 1;
 
     int length = strlen(text);
     for (int i = 0; i < length; i++)
