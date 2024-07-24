@@ -49,6 +49,7 @@ int contar_letras(string text)
 }
 
 
+// Contamos os espaços que existem, assim descobrimos as palavras separadas por espaços
 int contar_palavras(string text)
 {
     int palavras = 1;
@@ -63,3 +64,7 @@ int contar_palavras(string text)
     }
     return palavras;
 }
+
+
+// Palavras que terminem com (., !, ?) serão consideradas fim de frases
+
