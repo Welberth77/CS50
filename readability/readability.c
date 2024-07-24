@@ -7,6 +7,7 @@
 
 
 int contar_letras(string text);
+int contar_palavras(string text);
 
 
 int main(void)
@@ -17,6 +18,9 @@ int main(void)
     // Contar o número de letras, palavras e frases no texto
     int total_letras = contar_letras(text);
     printf("%i\n", total_letras);
+
+    int total_palavras = contar_palavras(text);
+    printf("%i\n", total_palavras);
 
     // Calculando nível do texto
     // Fórmula index = 0.0588 * L - 0.296 * S - 15.8
@@ -42,4 +46,20 @@ int contar_letras(string text)
         }
     }
     return letras;
+}
+
+
+int contar_palavras(string text)
+{
+    int palavras = 0;
+
+    int length = strlen(text);
+    for (int i = 0; i < length; i++)
+    {
+        if (isalpha(text[i]) == 0)
+        {
+            palavras++;
+        }
+    }
+    return palavras;
 }
