@@ -17,9 +17,9 @@ int main(void)
 
     // Calcular resultado
     int score_player1 = compute_score(word_player1);
-    printf(score_player1);
+    printf("%i\n", score_player1);
     int score_player2 = compute_score(word_player2);
-    printf(score_player2);
+    printf("%i\n", score_player2);
 
     // Imprimir resultado
 }
