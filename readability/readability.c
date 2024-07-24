@@ -18,21 +18,18 @@ int main(void)
 
     // Contar o número de letras
     int total_letras = contar_letras(text);
-    printf("%i\n", total_letras);
 
     // Contar número de palavras
     int total_palavras = contar_palavras(text);
-    printf("%i\n", total_palavras);
 
     // Contar número de frases
     int total_frases = contar_frases(text);
-    printf("%i\n", total_frases);
 
     // Calculando nível do texto
     // Fórmula index = 0.0588 * L - 0.296 * S - 15.8
     // onde (L) é o número médio de letras por 100 palavras no texto, e (S) é o número médio de frases por 100 palavras no texto.
-    long L = (total_letras / total_palavras) * 100;
-    long S = (total_frases / total_palavras) * 100;
+    long L = ((float) total_letras / (float) total_palavras) * 100;
+    long S = ((float) total_frases / (float) total_palavras) * 100;
 
     int grade = round(0.0588 * L * 0.296 * S - 15.8);
 
