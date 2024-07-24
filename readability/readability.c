@@ -83,7 +83,7 @@ int contar_frases(string text)
 
     // Recebendo tamanho do texto
     int length = strlen(text);
-    for (int i = 0; i < length; i++)
+    for (int i = 0; i <= length; i++)
     {
         // Verificanod se existe algum desses caracteres
         if (text[i] == '.' || text[i] == '!' || text[i] == '?')
