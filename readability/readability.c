@@ -6,5 +6,9 @@
 
 int main(void)
 {
-    printf("Ola");
+    // Entrada do texto
+
+    // Calculando nível do texto
+
+    // Imprimindo nota e nível do texto
 }
