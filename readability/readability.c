@@ -55,7 +55,6 @@ int contar_letras(string text)
     return letras;
 }
 
-// , / . / ! / ? = ele esta retornando como palavra
 // Contamos os espaços que existem, assim descobrimos as palavras separadas por espaços
 int contar_palavras(string text)
 {
@@ -67,7 +66,7 @@ int contar_palavras(string text)
     for (int i = 0; i < length; i++)
     {
         // Verificando se é espaço
-        if (isblank(text[i]) == ' ')
+        if (isblank(text[i]) != 0)
         {
             // Acrescentando +1 para as palavras
             palavras++;
