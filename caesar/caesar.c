@@ -5,9 +5,9 @@
 int main(int argc, string argv[])
 {
     // Receber a chave k direto no prompt de comando
-    if (argv != argv[1])
+    if (argc > 2)
     {
-        printf("./ caesar Key\n");
+        printf("Usage: ./caesar Key\n");
     }
     else
     {
