@@ -7,6 +7,7 @@
 
 bool apenas_digitos(string s);
 char rotate(string s, int n);
+global string texto_criptografado;
 
 // Recebendo a chave k direto no prompt de comando
 int main(int argc, string argv[])
@@ -39,7 +40,6 @@ int main(int argc, string argv[])
             string plaintext = get_string("Plaintext: ");
 
             // Criptografando o texto
-            global string texto_criptografado = " ";
             char result = rotate(plaintext, key);
             printf("%c\n", result);
             return 0;
