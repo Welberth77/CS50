@@ -81,7 +81,7 @@ char rotate(char c, int n)
     // Mudando letras
     if (isalpha(c))
     {
-        resultado = (c + n) % 26;
+        resultado = ((c - 'A') + n) % 26 + 'A';
         return resultado;
     }
     else
