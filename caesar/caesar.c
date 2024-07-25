@@ -44,11 +44,6 @@ int main(int argc, string argv[])
             return 0;
         }
     }
-    // Tabela ascii
-    // Maiusculos de 65 até 90
-    // Minusculos de 97 até 122
-    // Fórmula Ci = (pi + k) % 26
-
     // Imprimindo texto descriptografado
 }
 
@@ -76,7 +71,9 @@ bool apenas_digitos(string s)
 
 char rotate(char c, int n)
 {
+    // Fórmula Ci = (pi + k) % 26
     char char_criptografado = c;
+    
     //Verificando se é um caractere alfabético
     if (isalpha(c))
     {
