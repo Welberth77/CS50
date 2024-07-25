@@ -32,7 +32,7 @@ int main(int argc, string argv[])
             // Conventendo string para número inteiro
             int key = atoi(argv[1]);
 
-            //Imprimindo chave
+            // Imprimindo chave
             printf("%i\n", key);
 
             // Solicitando texto simples
@@ -76,13 +76,12 @@ bool apenas_digitos(string s)
     return resultado;
 }
 
-
 char rotate(char c, int n)
 {
     // Fórmula Ci = (pi + k) % 26
     char char_criptografado = c;
 
-    //Verificando se é um caractere alfabético
+    // Verificando se é um caractere alfabético
     if (isalpha(c))
     {
         // Verificando se é maiúsculo
