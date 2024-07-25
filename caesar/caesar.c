@@ -81,6 +81,16 @@ bool apenas_digitos(string s)
 
 char rotate(char c, int n)
 {
-    char resultado = c + n;
+    char resultado = c;
+    // Mudando letras
+
+    if (isalpha(c))
+    {
+        resultado = c + n;
+    }
+    else
+    {
+        return resultado;
+    }
     return resultado;
 }
