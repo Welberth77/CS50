@@ -8,16 +8,19 @@
 bool apenas_digitos(string s);
 char rotate(char c, int n);
 
+// Recebendo a chave k direto no prompt de comando
 int main(int argc, string argv[])
 {
-    // Receber a chave k direto no prompt de comando
+    // Validando informações
     if (argc != 2)
     {
+        // Verificando se tem mais de dois argumentos no prompt
         printf("Usage: ./caesar Key\n");
         return 1;
     }
     else
     {
+        // Verificando se tem apenas digitos no prompt
         bool resultado = apenas_digitos(argv[1]);
         if (resultado != true)
         {
@@ -26,12 +29,16 @@ int main(int argc, string argv[])
         }
         else
         {
-            // Printando e convertendo string para número inteir
+            // Conventendo string para número inteiro
             int key = atoi(argv[1]);
+
+            //Imprimindo chave
             printf("%i\n", key);
 
             // Solicitando texto simples
             string plaintext = get_string("Plaintext: ");
+
+            // Fazendo a criptografia
             char result = rotate(plaintext[0], key);
             printf("%c\n", result);
             return 0;
