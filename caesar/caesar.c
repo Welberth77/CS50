@@ -66,3 +66,9 @@ bool apenas_digitos(string s)
     }
     return resultado;
 }
+
+
+char rotate(char c, int n)
+{
+    
+}
