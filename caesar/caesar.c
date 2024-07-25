@@ -40,7 +40,8 @@ int main(int argc, string argv[])
 
             // Imprimindo texto descriptografado
             printf("ciphertext: ");
-            // Criptografando todo o texto
+
+            // Criptografando todo o texto letra por letra
             int length = strlen(plaintext);
             for (int i = 0; i < length; i++)
             {
@@ -48,6 +49,7 @@ int main(int argc, string argv[])
                 char result = rotate(plaintext[i], key);
                 printf("%c", result);
             }
+            
             // Quebrando a linha no final
             printf("\n");
             return 0;
