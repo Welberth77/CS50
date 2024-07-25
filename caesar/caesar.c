@@ -60,7 +60,7 @@ bool apenas_digitos(string s)
     int length = strlen(s);
     for (int i = 0; i < length; i++)
     {
-        // Verificando se é um digito decial
+        // Verificando se é um digito decimal
         if (isdigit(s[i]) != 0)
         {
             resultado = true;
@@ -74,32 +74,27 @@ bool apenas_digitos(string s)
 }
 
 
-char rotate(string s, int n)
+char rotate(char c, int n)
 {
-    string valor_criptografado;
-
-    int length = strlen(s);
-    for (int i = 0; i < length; i++)
+    char char_criptografado = c;
+    //Verificando se é um caractere alfabético
+    if (isalpha(c))
     {
-        //Verificando se é um caractere alfabético
-        if (isalpha(s[i]))
+        // Verificando se é maiúsculo
+        if (isupper(c))
         {
-            // Verificando se é maiúsculo
-            if (isupper(s[i]))
-            {
-                //
-                valor_criptografado[i] = ((s[i] - 'A') + n) % 26 + 'A';
-            }
-            // Verificando se é minusculo
-            else if (islower(s[i]))
-            {
-                valor_criptografado[i] = ((s[i] - 'a') + n) % 26 + 'a';
-            }
+            char_criptografado = ((c - 'A') + n) % 26 + 'A';
         }
-        else
+        // Verificando se é minusculo
+        else if (islower(c))
         {
-            valor_criptografado[i] = s[i];
+            char_criptografado = ((c - 'a') + n) % 26 + 'a';
         }
     }
-    return valor_criptografado;
+    else
+    {
+        // Se não for maiusculo nem minusculo
+        return char_criptografado;
+    }
+    return char_criptografado;
 }
