@@ -37,17 +37,19 @@ int main(int argc, string argv[])
 
 bool apenas_digitos(string s)
 {
+    bool resultado = false;
+
     int length = strlen(s);
     for (int i = 0; i < length; i++)
     {
         if (isdigit(s[i]) != 0)
         {
-            return true;
+            resultado = true;
         }
         else
         {
-            return false;
+            resultado = false;
         }
     }
-    return false;
+    return resultado;
 }
