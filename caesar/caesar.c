@@ -39,8 +39,12 @@ int main(int argc, string argv[])
             string plaintext = get_string("Plaintext: ");
 
             // Criptografando o texto
-            char result = rotate(plaintext[0], key);
-            printf("%c\n", result);
+            int length = strlen(plaintext);
+            for (int i = 0; i < length; i++)
+            {
+                char result = rotate(plaintext[i], key);
+                printf("%c\n", result);
+            }
             return 0;
         }
     }
@@ -73,7 +77,7 @@ char rotate(char c, int n)
 {
     // Fórmula Ci = (pi + k) % 26
     char char_criptografado = c;
-    
+
     //Verificando se é um caractere alfabético
     if (isalpha(c))
     {
