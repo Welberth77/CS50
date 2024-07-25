@@ -27,7 +27,7 @@ int main(int argc, string argv[])
         {
             // Printando e convertendo string para número inteir
             printf("%i\n", atoi(argv[1]));
-            
+
             // Solicitando texto simples
             string plaintext = get_string("Plaintext: ");
             return 0;
@@ -36,8 +36,8 @@ int main(int argc, string argv[])
 
 
     // Criptografando o texto
-    // Mudar apenas textos alfabéticos
-    // Maiúsculos e minusculos continuam
+    // Preservar Maiusculos e minusculos
+    // Se não for alfabético deixe como está
 
     // Imprimindo texto descriptografado
 }
