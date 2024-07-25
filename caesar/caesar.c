@@ -6,6 +6,7 @@
 #import <string.h>
 
 bool apenas_digitos(string s);
+char rotate(char c, int n);
 
 int main(int argc, string argv[])
 {
@@ -26,10 +27,13 @@ int main(int argc, string argv[])
         else
         {
             // Printando e convertendo string para número inteir
-            printf("%i\n", atoi(argv[1]));
+            int key = atoi(argv[1]);
+            printf("%i\n", key);
 
             // Solicitando texto simples
             string plaintext = get_string("Plaintext: ");
+            char result = rotate(plaintext[0], key);
+            printf("%c\n", result);
             return 0;
         }
     }
@@ -70,12 +74,6 @@ bool apenas_digitos(string s)
 
 char rotate(char c, int n)
 {
-    int length = strlen(text);
-    for (int i = 0; i < length; i++)
-    {
-        if (isalpha(text[i]))
-        {
-            
-        }
-    }
+    char resultado = c + n;
+    return resultado;
 }
