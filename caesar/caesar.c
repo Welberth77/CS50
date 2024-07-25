@@ -41,6 +41,7 @@ int main(int argc, string argv[])
     // Tabela ascii
     // Maiusculos de 65 até 90
     // Minusculos de 97 até 122
+    // Fórmula Ci = 
 
     // Imprimindo texto descriptografado
 }
