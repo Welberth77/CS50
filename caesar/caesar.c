@@ -6,7 +6,7 @@
 #import <string.h>
 
 bool apenas_digitos(string s);
-char rotate(char c, int n);
+string rotate(string s, int n);
 
 // Recebendo a chave k direto no prompt de comando
 int main(int argc, string argv[])
@@ -39,8 +39,8 @@ int main(int argc, string argv[])
             string plaintext = get_string("Plaintext: ");
 
             // Criptografando o texto
-            char result = rotate(plaintext[0], key);
-            printf("%c\n", result);
+            string result = rotate(plaintext, key);
+            printf("%s\n", result);
             return 0;
         }
     }
@@ -74,25 +74,32 @@ bool apenas_digitos(string s)
 }
 
 
-char rotate(char c, int n)
+string rotate(string s, int n)
 {
+    string texto_criptografado;
 
-    char resultado = c;
-    // Mudando letras
-    if (isalpha(c))
+    int length = strlen(s);
+    for (int i = 0; i < length; i++)
     {
-        if (isupper(c))
+    //Verificando se é um caractere alfabético
+    if (isalpha(s[i]))
+    {
+        // Verificando se é maiúsculo
+        if (isupper(s[i]))
         {
-            resultado = ((c - 'A') + n) % 26 + 'A';
+            //
+            texto_criptografado[i] = ((s[i] - 'A') + n) % 26 + 'A';
         }
-        else if (islower(c))
+        // Verificando se é minusculo
+        else if (islower(s[i]))
         {
-            resultado = ((c - 'a') + n) % 26 + 'a';
+            texto_criptografado[i] = ((s[i] - 'a') + n) % 26 + 'a';
         }
     }
     else
     {
-        return resultado;
+        texto_criptografado[i] = s[i];
     }
-    return resultado;
+    }
+    return texto_criptografado;
 }
