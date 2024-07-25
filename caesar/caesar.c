@@ -5,13 +5,13 @@
 int main(int argc, string argv[])
 {
     // Receber a chave k direto no prompt de comando
-    printf("%i\n", argc);
+    printf("%s\n", argv[1]);
 
     // Texto simples
 
     // Criptografando o texto
     // Mudar apenas textos alfabéticos
-    // Maiúsculos e minusculos continuam 
+    // Maiúsculos e minusculos continuam
 
     // Imprimindo texto descriptografado
 }
