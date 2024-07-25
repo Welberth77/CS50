@@ -6,7 +6,7 @@
 #import <string.h>
 
 bool apenas_digitos(string s);
-char* rotate(string s, int n);
+char rotate(char c, int n);
 
 // Recebendo a chave k direto no prompt de comando
 int main(int argc, string argv[])
@@ -39,8 +39,8 @@ int main(int argc, string argv[])
             string plaintext = get_string("Plaintext: ");
 
             // Criptografando o texto
-            char* result = rotate(plaintext, key);
-            printf("%s\n", result);
+            char result = rotate(plaintext[0], key);
+            printf("%c\n", result);
             return 0;
         }
     }
@@ -74,7 +74,7 @@ bool apenas_digitos(string s)
 }
 
 
-char* rotate(string s, int n)
+char rotate(string s, int n)
 {
     string valor_criptografado;
 
