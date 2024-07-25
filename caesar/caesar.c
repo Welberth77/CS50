@@ -39,6 +39,7 @@ int main(int argc, string argv[])
             string plaintext = get_string("Plaintext: ");
 
             // Criptografando o texto
+            global string texto_criptografado = " ";
             char result = rotate(plaintext, key);
             printf("%c\n", result);
             return 0;
@@ -76,7 +77,7 @@ bool apenas_digitos(string s)
 
 char rotate(string s, int n)
 {
-    char texto_criptografado;
+    string texto_criptografado = " ";
 
     int length = strlen(s);
     for (int i = 0; i < length; i++)
