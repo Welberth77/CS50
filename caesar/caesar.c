@@ -85,25 +85,25 @@ char rotate(string s, int n)
     // loop
     for (int i = 0; i < length; i++)
     {
-    //Verificando se é um caractere alfabético
-    if (isalpha(s[i]))
-    {
-        // Verificando se é maiúsculo
-        if (isupper(s[i]))
+        //Verificando se é um caractere alfabético
+        if (isalpha(s[i]))
         {
-            //
-            texto_criptografado[i] = ((s[i] - 'A') + n) % 26 + 'A';
+            // Verificando se é maiúsculo
+            if (isupper(s[i]))
+            {
+                //
+                texto_criptografado[i] = ((s[i] - 'A') + n) % 26 + 'A';
+            }
+            // Verificando se é minusculo
+            else if (islower(s[i]))
+            {
+                texto_criptografado[i] = ((s[i] - 'a') + n) % 26 + 'a';
+            }
         }
-        // Verificando se é minusculo
-        else if (islower(s[i]))
+        else
         {
-            texto_criptografado[i] = ((s[i] - 'a') + n) % 26 + 'a';
+            texto_criptografado[i] = s[i];
         }
-    }
-    else
-    {
-        texto_criptografado[i] = s[i];
-    }
     }
     return texto_criptografado;
 }
