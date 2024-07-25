@@ -30,6 +30,13 @@ bool apenas_digitos(string s)
     int length = strlen(s);
     for (int i = 0; i < length; i++)
     {
-        
+        if (isdigit(s[i]))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
