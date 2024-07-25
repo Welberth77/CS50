@@ -37,11 +37,13 @@ int main(int argc, string argv[])
 
 bool apenas_digitos(string s)
 {
+    // Armazenando resultado
     bool resultado = false;
 
     int length = strlen(s);
     for (int i = 0; i < length; i++)
     {
+        // Verificando se é um digito decial
         if (isdigit(s[i]) != 0)
         {
             resultado = true;
