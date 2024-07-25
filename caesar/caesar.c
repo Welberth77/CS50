@@ -25,12 +25,15 @@ int main(int argc, string argv[])
         }
         else
         {
-            printf("%s\n", argv[1]);
+            // Printando e convertendo string para número inteir
+            printf("%i\n", atoi(argv[1]));
+            
+            // Solicitando texto simples
+            string plaintext = get_string("Plaintext: ");
             return 0;
         }
     }
 
-    // Texto simples
 
     // Criptografando o texto
     // Mudar apenas textos alfabéticos
