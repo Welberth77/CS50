@@ -10,6 +10,8 @@ int main(int argc, string argv[])
     // Texto simples
 
     // Criptografando o texto
+    // Mudar apenas textos alfabéticos
+    // Maiúsculos e minusculos continuam 
 
     // Imprimindo texto descriptografado
 }
