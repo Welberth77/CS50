@@ -80,12 +80,12 @@ bool apenas_digitos(string s)
 
 char rotate(char c, int n)
 {
-    
+
     char resultado = c;
     // Mudando letras
     if (isalpha(c))
     {
-        resultado = c + n;
+        resultado = (c + n) % 26;
     }
     else
     {
