@@ -2,6 +2,7 @@
 #import <cs50.h>
 #import <ctype.h>
 #import <stdio.h>
+#import <stdlib.h>
 #import <string.h>
 
 bool apenas_digitos(string s);
