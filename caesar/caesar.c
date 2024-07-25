@@ -38,7 +38,7 @@ int main(int argc, string argv[])
             // Solicitando texto simples
             string plaintext = get_string("Plaintext: ");
 
-            // Criptografando o texto
+            // Criptografando todo o texto
             int length = strlen(plaintext);
             for (int i = 0; i < length; i++)
             {
