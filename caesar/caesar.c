@@ -1,6 +1,8 @@
 // Croptografia de césar
 #import <cs50.h>
+#import <ctype.h>
 #import <stdio.h>
+#import <string.h>
 
 int main(int argc, string argv[])
 {
@@ -25,5 +27,9 @@ int main(int argc, string argv[])
 
 bool apenas_digitos(string s)
 {
-    
+    int length = strlen(s);
+    for (int i = 0; i < length; i++)
+    {
+        
+    }
 }
