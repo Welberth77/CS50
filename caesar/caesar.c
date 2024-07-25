@@ -76,7 +76,7 @@ bool apenas_digitos(string s)
 
 string rotate(string s, int n)
 {
-    string texto_criptografado = " ";
+    string texto_criptografado[];
 
     int length = strlen(s);
     for (int i = 0; i < length; i++)
