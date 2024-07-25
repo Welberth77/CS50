@@ -6,7 +6,7 @@
 #import <string.h>
 
 bool apenas_digitos(string s);
-string rotate(string s, int n);
+char rotate(string s, int n);
 
 // Recebendo a chave k direto no prompt de comando
 int main(int argc, string argv[])
@@ -39,8 +39,8 @@ int main(int argc, string argv[])
             string plaintext = get_string("Plaintext: ");
 
             // Criptografando o texto
-            string result = rotate(plaintext, key);
-            printf("%s\n", result);
+            char result = rotate(plaintext, key);
+            printf("%c\n", result);
             return 0;
         }
     }
@@ -74,36 +74,32 @@ bool apenas_digitos(string s)
 }
 
 
-string rotate(string s, int n)
+char rotate(string s, int n)
 {
-    // Obtendo tamanho do texto
+    char texto_criptografado;
+
     int length = strlen(s);
-
-    // Array de caracteres
-    char texto_criptografado[length];
-
-    // loop
     for (int i = 0; i < length; i++)
     {
-        //Verificando se é um caractere alfabético
-        if (isalpha(s[i]))
+    //Verificando se é um caractere alfabético
+    if (isalpha(s[i]))
+    {
+        // Verificando se é maiúsculo
+        if (isupper(s[i]))
         {
-            // Verificando se é maiúsculo
-            if (isupper(s[i]))
-            {
-                //
-                texto_criptografado[i] = ((s[i] - 'A') + n) % 26 + 'A';
-            }
-            // Verificando se é minusculo
-            else if (islower(s[i]))
-            {
-                texto_criptografado[i] = ((s[i] - 'a') + n) % 26 + 'a';
-            }
+            //
+            texto_criptografado[i] = ((s[i] - 'A') + n) % 26 + 'A';
         }
-        else
+        // Verificando se é minusculo
+        else if (islower(s[i]))
         {
-            texto_criptografado[i] = s[i];
+            texto_criptografado[i] = ((s[i] - 'a') + n) % 26 + 'a';
         }
+    }
+    else
+    {
+        texto_criptografado[i] = s[i];
+    }
     }
     return texto_criptografado;
 }
