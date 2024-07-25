@@ -38,7 +38,7 @@ int main(int argc, string argv[])
             // Solicitando texto simples
             string plaintext = get_string("Plaintext: ");
 
-            // Fazendo a criptografia
+            // Criptografando o texto
             char result = rotate(plaintext[0], key);
             printf("%c\n", result);
             return 0;
@@ -46,7 +46,6 @@ int main(int argc, string argv[])
     }
 
 
-    // Criptografando o texto
     // Preservar Maiusculos e minusculos
     // Se não for alfabético deixe como está
     // Tabela ascii
