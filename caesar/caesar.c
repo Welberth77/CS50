@@ -79,7 +79,7 @@ bool apenas_digitos(string s)
 }
 
 
-char rotate(char c, int n)
+char rotate(char c, int K)
 {
     char resultado = c;
     // Mudando letras
