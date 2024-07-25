@@ -38,6 +38,9 @@ int main(int argc, string argv[])
     // Criptografando o texto
     // Preservar Maiusculos e minusculos
     // Se não for alfabético deixe como está
+    // Tabela ascii
+    // Maiusculos de 65 até 90
+    // Minusculos de 97 até 122
 
     // Imprimindo texto descriptografado
 }
