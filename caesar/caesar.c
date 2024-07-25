@@ -78,18 +78,22 @@ bool apenas_digitos(string s)
 }
 
 
-char rotate(char c, int n)
+char rotate(string s, int n)
 {
-    char resultado = c;
+    char resultado = 0;
     // Mudando letras
 
-    if (isalpha(c))
+    int length = strlen(s);
+    for (int i = 0; i < length; i++)
     {
-        resultado = c + n;
-    }
-    else
-    {
-        return resultado;
+        if (isalpha(s[i]))
+        {
+            resultado = s[i] + n;
+        }
+        else
+        {
+            return resultado;
+        }
     }
     return resultado;
 }
