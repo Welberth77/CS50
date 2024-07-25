@@ -4,16 +4,26 @@
 #import <stdio.h>
 #import <string.h>
 
+bool apenas_digitos(string s);
+
 int main(int argc, string argv[])
 {
     // Receber a chave k direto no prompt de comando
-    if (argc > 2)
+    if (argc != 2)
     {
         printf("Usage: ./caesar Key\n");
     }
     else
     {
-        printf("%s\n", argv[1]);
+        bool resultado = apenas_digitos(argv[1]);
+        if (resultado != true)
+        {
+            printf("Usage: ./caesar Key\n");
+        }
+        else
+        {
+            printf("%s\n", argv[1]);
+        }
     }
 
     // Texto simples
