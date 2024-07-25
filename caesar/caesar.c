@@ -2,7 +2,8 @@
 #import <cs50.h>
 #import <stdio.h>
 
-int main(void)
+int main(int argc, string argv[])
 {
-    
+    // Receber a chave k direto no prompt de comando
+    printf("%i\n", argc);
 }
