@@ -22,3 +22,8 @@ int main(int argc, string argv[])
 
     // Imprimindo texto descriptografado
 }
+
+bool apenas_digitos(string s)
+{
+    
+}
