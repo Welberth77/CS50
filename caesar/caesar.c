@@ -12,6 +12,7 @@ int main(int argc, string argv[])
     if (argc != 2)
     {
         printf("Usage: ./caesar Key\n");
+        return 1;
     }
     else
     {
@@ -19,10 +20,12 @@ int main(int argc, string argv[])
         if (resultado != true)
         {
             printf("Usage: ./caesar Key\n");
+            return 1;
         }
         else
         {
             printf("%s\n", argv[1]);
+            return 0;
         }
     }
 
