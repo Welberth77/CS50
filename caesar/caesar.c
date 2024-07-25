@@ -44,10 +44,6 @@ int main(int argc, string argv[])
             return 0;
         }
     }
-
-
-    // Preservar Maiusculos e minusculos
-    // Se não for alfabético deixe como está
     // Tabela ascii
     // Maiusculos de 65 até 90
     // Minusculos de 97 até 122
@@ -85,7 +81,8 @@ char rotate(char c, int n)
     // Mudando letras
     if (isalpha(c))
     {
-        resultado = (c + n) % 26;
+        resultado = ((int) c + n) % 26;
+        return resultado;
     }
     else
     {
