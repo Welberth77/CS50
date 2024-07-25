@@ -49,4 +49,5 @@ bool apenas_digitos(string s)
             return false;
         }
     }
+    return false;
 }
