@@ -70,5 +70,12 @@ bool apenas_digitos(string s)
 
 char rotate(char c, int n)
 {
-    
+    int length = strlen(text);
+    for (int i = 0; i < length; i++)
+    {
+        if (isalpha(text[i]))
+        {
+            
+        }
+    }
 }
