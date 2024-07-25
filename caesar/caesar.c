@@ -38,17 +38,21 @@ int main(int argc, string argv[])
             // Solicitando texto simples
             string plaintext = get_string("Plaintext: ");
 
+            // Imprimindo texto descriptografado
+            printf("ciphertext: ");
             // Criptografando todo o texto
             int length = strlen(plaintext);
             for (int i = 0; i < length; i++)
             {
+                // Imprimindo cada uma das letras
                 char result = rotate(plaintext[i], key);
-                printf("%c\n", result);
+                printf("%c", result);
             }
+            // Quebrando a linha no final
+            printf("\n");
             return 0;
         }
     }
-    // Imprimindo texto descriptografado
 }
 
 bool apenas_digitos(string s)
