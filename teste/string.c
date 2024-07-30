@@ -4,7 +4,7 @@
 
 
 int main(void) {
-    string s = get_string("Input:  ");
+    string s = get_string("Input: ");
     printf("Output: ");
 
     int length = strlen(s);
