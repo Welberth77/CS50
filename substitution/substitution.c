@@ -25,6 +25,8 @@ int main(int argc, string argv[])
                     return 1;
                 }
             }
+            // Verificar se os caracteres tem letras repetidas
+            // Fazer dois loops i, j para fazer a comparação com cada caractere
             // Saída correta
             printf("Correto\n");
             return 0;
