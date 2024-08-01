@@ -14,9 +14,16 @@ int main(int argc, string argv[])
         if (strlen(argv[1]) == 26 )
         {
             // Verificando se todos os caracteres são alfabeticos
-            if 
-            printf("correto\n");
-            return 0;
+            if (isalpha(argv[1]) == 0)
+            {
+                printf("correto\n");
+                return 0;
+            }
+            else
+            {
+                printf("Key must only contain alphabetic characters.\n");
+                return 3;
+            }
         }
         else
         {
