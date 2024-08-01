@@ -1,8 +1,8 @@
 // criptografar mensagens usando uma cifra de substituição. Ou seja, o usuário passando uma chave de 26 caracteres
-#import <cs50.h>
-#import <ctype.h>
-#import <stdio.h>
-#import <string.h>
+#include <cs50.h>
+#include <ctype.h>
+#include <stdio.h>
+#include <string.h>
 
 int main(int argc)
 {
