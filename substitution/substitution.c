@@ -4,7 +4,8 @@
 #import <stdio.h>
 #import <string.h>
 
-int main(void)
+int main(int argc)
 {
+    // Chave de 26 caracteres
     printf("Olá\n");
 }
