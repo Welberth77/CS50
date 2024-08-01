@@ -27,4 +27,8 @@ int main(int argc, string argv[])
         printf("./Substitution key\n");
         return 1;
     }
+
+    // Plaintext (Texto original)
+
+    // Ciphertext (Texto criptografado)
 }
