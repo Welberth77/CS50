@@ -8,21 +8,13 @@ int main(int argc, string argv[])
 {
     // Chave de 26 caracteres
     // Verificando se tem dois argumentos
-    verificacao(argc, argv[])
-
-    // Plaintext (Texto original)
-
-    // Ciphertext (Texto criptografado)
-    // Maiusculas e minusculas devem ser respeitados
-}
-
-int verificacao(int argc, string argv[])
-{
-        if (argc == 2)
+    if (argc == 2)
     {
         // Verificando se o tamanho tem 26 caracteres
         if (strlen(argv[1]) == 26 )
         {
+            // Verificando se todos os caracteres são alfabeticos
+            if 
             printf("correto\n");
             return 0;
         }
@@ -34,7 +26,12 @@ int verificacao(int argc, string argv[])
     }
     else
     {
-        printf("Usage: ./Substitution KEY\n");
+        printf("Usage: ./Substitution key\n");
         return 1;
     }
+
+    // Plaintext (Texto original)
+
+    // Ciphertext (Texto criptografado)
+    // Maiusculas e minusculas devem ser respeitados
 }
