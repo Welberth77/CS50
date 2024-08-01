@@ -7,14 +7,21 @@
 int main(int argc, string argv[])
 {
     // Chave de 26 caracteres
-    if (strlen(argv) != 26)
+    if (argc == 2)
     {
-        printf("A chave precisa ter 26 caracteres\n");
-        return 1;
+        if (strlen(argv[1]) == 26 )
+        {
+            printf("correto\n");
+        }
+        else
+        {
+            printf("Key must contain 26 characters.\n");
+            return 2;
+        }
     }
     else
     {
-        printf("Correto\n");
-        return 0;
+        printf("./Substitution key\n");
+        return 1;
     }
 }
