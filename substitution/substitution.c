@@ -7,7 +7,7 @@
 int main(int argc, string argv[])
 {
     // Chave de 26 caracteres
-    if (argc != 26)
+    if (strlen(argv) != 26)
     {
         printf("A chave precisa ter 26 caracteres\n");
         return 1;
@@ -15,5 +15,6 @@ int main(int argc, string argv[])
     else
     {
         printf("Correto\n");
+        return 0;
     }
 }
