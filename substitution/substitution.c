@@ -7,11 +7,14 @@
 int main(int argc, string argv[])
 {
     // Chave de 26 caracteres
+    // Verificando se tem dois argumentos
     if (argc == 2)
     {
+        // Verificando se o tamanho tem 26 caracteres
         if (strlen(argv[1]) == 26 )
         {
             printf("correto\n");
+            return 0;
         }
         else
         {
