@@ -13,5 +13,6 @@ person;
 
 int main(void)
 {
-
+    // Criando uma matriz (array) de 3 pessoas
+    person peopole[3];
 }
