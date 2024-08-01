@@ -13,7 +13,11 @@ int main(void)
         if (numbers[i] == n)
         {
             printf("Found (Encontrado)\n");
+            // Vai encerrar o código nestta linha e retornar 0
+            return 0;
         }
     }
     printf("Not found (Não encontrado)\n");
+    // Retorna 1 e encerra o código
+    return 1;
 }
