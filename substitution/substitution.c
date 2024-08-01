@@ -4,8 +4,10 @@
 #include <stdio.h>
 #include <string.h>
 
+// Obter chave
 int main(int argc, string argv[])
 {
+    // verificação da chave
     // Chave de 26 caracteres
     // Verificando se tem dois argumentos
     if (argc == 2)
@@ -20,7 +22,7 @@ int main(int argc, string argv[])
                 if (isalpha(argv[1][i]) == 0)
                 {
                     printf("Key must only contais alphabetic characters.\n");
-                    return 3;
+                    return 1;
                 }
             }
             // Saída correta
@@ -30,7 +32,7 @@ int main(int argc, string argv[])
         else
         {
             printf("Key must contain 26 characters.\n");
-            return 2;
+            return 1;
         }
     }
     else
