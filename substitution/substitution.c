@@ -24,7 +24,7 @@ int main(int argc, string argv[])
     }
     else
     {
-        printf("./Substitution key\n");
+        printf("Usage: ./Substitution KEY\n");
         return 1;
     }
 
