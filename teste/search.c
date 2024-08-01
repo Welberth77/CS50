@@ -32,7 +32,7 @@ int main(void)
 
     for (int i = 0; i < 6; i++)
     {
-        if (strcmp(strings[i], s))
+        if (strcmp(strings[i], s) == 0)
         {
             printf("Found (Encontrado)\n");
             // Vai encerrar o código nestta linha e retornar 0
