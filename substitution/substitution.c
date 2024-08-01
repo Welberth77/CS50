@@ -31,4 +31,5 @@ int main(int argc, string argv[])
     // Plaintext (Texto original)
 
     // Ciphertext (Texto criptografado)
+    // Maiusculas e minusculas devem ser respeitados
 }
