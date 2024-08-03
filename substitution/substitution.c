@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 
-string alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char alfabeto[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 // Obter chave
 int main(int argc, string argv[])
 {
