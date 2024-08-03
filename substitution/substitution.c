@@ -26,7 +26,18 @@ int main(int argc, string argv[])
                 }
             }
             // Verificar se os caracteres tem letras repetidas
-            // Fazer dois loops i, j para fazer a comparação com cada caractere
+            for (int i = 0; i < length; i++)
+            {
+                for (int j = 1; j < length; j++)
+                {
+                    if (argv[1][i] == argv[1][j])
+                    {
+                        // Retorna erro ao digitar dois caracteres iguais
+                        printf("Key must not contain repeated characters.\n");
+                        return 1;
+                    }
+                }
+            }
             // Saída correta
             printf("Correto\n");
             return 0;
