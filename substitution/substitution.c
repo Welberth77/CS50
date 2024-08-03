@@ -28,13 +28,12 @@ int main(int argc, string argv[])
             // Verificar se os caracteres tem letras repetidas
             for (int i = 0; i < length; i++)
             {
-                // Transformando todo array em letras minúsculas para a comparação
+                // Verificando se letra é Maiúscula
                 if (isupper(argv[1][i]))
                 {
-                    
+                    // Transformando todo array em letras minúsculas para a comparação
+                    argv[1][i] = tolower(argv[1][i]);
                 }
-
-
 
                 for (int j = i + 1; j < length; j++)
                 {
