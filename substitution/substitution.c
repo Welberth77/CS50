@@ -47,8 +47,11 @@ int main(int argc, string argv[])
                 }
             }
             // Saída correta
-            printf("Correto\n");
-            return 0;
+            // Plaintext (Texto original)
+            string plaintext = get_string("Plaintext: ");
+
+            // Ciphertext (Texto criptografado)
+            // Maiusculas e minusculas devem ser respeitados
         }
         else
         {
@@ -62,8 +65,4 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    // Plaintext (Texto original)
-
-    // Ciphertext (Texto criptografado)
-    // Maiusculas e minusculas devem ser respeitados
 }
