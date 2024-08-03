@@ -72,6 +72,7 @@ int main(int argc, string argv[])
 
 }
 
+// Erro na criptografia
 string criptografia(string plaintext, string chave)
 {
     string ciphertext = plaintext;
