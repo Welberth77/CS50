@@ -70,5 +70,8 @@ int main(int argc, string argv[])
 
 string criptografia(string plaintext)
 {
-    
+    for (int i = 0; i < 26; i++)
+    {
+        
+    }
 }
