@@ -76,7 +76,7 @@ string criptografia(string plaintext)
     {
         if (isalpha(plaintext[i]))
         {
-
+            
         }
     }
 }
