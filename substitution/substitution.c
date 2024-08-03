@@ -79,13 +79,23 @@ string criptografia(string plaintext, string chave)
     // Maiusculas e minusculas devem ser respeitados
     for (int i = 0; i < 26; i++)
     {
+        // Verificando se é alfabético
         if (isalpha(ciphertext[i]))
         {
+            // Loop de criptografia
             for (int j = 0; j < 26; j++)
             {
+                // Verificando se 
                 if (ciphertext[i] == alfabeto[j])
                 {
-                    ciphertext[i] = chave[j];
+                    if (isupper(ciphertext[i])
+                    {
+                        ciphertext[i] = toupper(chave[j]);
+                    }
+                    else
+                    {
+                        ciphertext[i] = chave[j];
+                    }
                 }
             }
         }
