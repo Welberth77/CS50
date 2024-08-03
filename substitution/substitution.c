@@ -55,6 +55,7 @@ int main(int argc, string argv[])
             string chave = argv[1];
             string plaintext = get_string("Plaintext: ");
             string ciphertext = criptografia(plaintext, chave);
+            printf("Ciphertext: %s\n", ciphertext);
 
         }
         else
@@ -78,16 +79,16 @@ string criptografia(string plaintext, string chave)
     // Maiusculas e minusculas devem ser respeitados
     for (int i = 0; i < 26; i++)
     {
-        if (isalpha(plaintext[i]))
+        if (isalpha(ciphertext[i]))
         {
             for (int j = 0; j < 26; j++)
             {
-                if (plaintext[i] == alfabeto[j])
+                if (ciphertext[i] == alfabeto[j])
                 {
-                    plaintext[i] = chave[j];
+                    ciphertext[i] = chave[j];
                 }
             }
         }
     }
-    return plaintext;
+    return ciphertext;
 }
