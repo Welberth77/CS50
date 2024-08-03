@@ -49,6 +49,7 @@ int main(int argc, string argv[])
             // Saída correta
             // Plaintext (Texto original)
             string plaintext = get_string("Plaintext: ");
+            string ciphertext = criptografia(plaintext);
 
             // Ciphertext (Texto criptografado)
             // Maiusculas e minusculas devem ser respeitados
@@ -65,4 +66,9 @@ int main(int argc, string argv[])
         return 1;
     }
 
+}
+
+string criptografia(string plaintext)
+{
+    
 }
