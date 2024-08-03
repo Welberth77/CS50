@@ -51,8 +51,6 @@ int main(int argc, string argv[])
             string plaintext = get_string("Plaintext: ");
             string ciphertext = criptografia(plaintext);
 
-            // Ciphertext (Texto criptografado)
-            // Maiusculas e minusculas devem ser respeitados
         }
         else
         {
@@ -70,8 +68,14 @@ int main(int argc, string argv[])
 
 string criptografia(string plaintext)
 {
+    string ciphertext = plaintext;
+    // Ciphertext (Texto criptografado)
+    // Maiusculas e minusculas devem ser respeitados
     for (int i = 0; i < 26; i++)
     {
-        
+        if (isalpha(plaintext[i]))
+        {
+            
+        }
     }
 }
