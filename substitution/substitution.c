@@ -85,15 +85,18 @@ string criptografia(string plaintext, string chave)
             // Loop de criptografia
             for (int j = 0; j < 26; j++)
             {
-                // Verificando se 
+                // Verificando se o caractere existe no alfabeto original
                 if (ciphertext[i] == alfabeto[j])
                 {
-                    if (isupper(ciphertext[i])
+                    // Verificando se é Maiúsculo
+                    if (isupper(ciphertext[i]))
                     {
+                        // Deixando caractere Maiúsculo e aplicando criptografia
                         ciphertext[i] = toupper(chave[j]);
                     }
                     else
                     {
+                        // Aplicando criptografia
                         ciphertext[i] = chave[j];
                     }
                 }
