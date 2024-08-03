@@ -28,7 +28,7 @@ int main(int argc, string argv[])
             // Verificar se os caracteres tem letras repetidas
             for (int i = 0; i < length; i++)
             {
-                for (int j = 1; j < length; j++)
+                for (int j = i + 1; j < length; j++)
                 {
                     if (argv[1][i] == argv[1][j])
                     {
