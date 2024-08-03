@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 
-string criptografia(string plaintext);
+string criptografia(string plaintext, string chave);
 
 char alfabeto[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -54,7 +54,7 @@ int main(int argc, string argv[])
             // Plaintext (Texto original)
             string chave = argv[1];
             string plaintext = get_string("Plaintext: ");
-            string ciphertext = criptografia(plaintext);
+            string ciphertext = criptografia(plaintext, chave);
 
         }
         else
@@ -71,7 +71,7 @@ int main(int argc, string argv[])
 
 }
 
-string criptografia(string plaintext)
+string criptografia(string plaintext, string chave)
 {
     string ciphertext = plaintext;
     // Ciphertext (Texto criptografado)
@@ -82,11 +82,12 @@ string criptografia(string plaintext)
         {
             for (int j = 0; j < 26; j++)
             {
-                if (plaintext[i] == alfabeto[j]);
+                if (plaintext[i] == alfabeto[j])
                 {
                     plaintext[i] = chave[j];
                 }
             }
         }
     }
+    return plaintext;
 }
