@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 
+string alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 // Obter chave
 int main(int argc, string argv[])
 {
@@ -75,7 +76,7 @@ string criptografia(string plaintext)
     {
         if (isalpha(plaintext[i]))
         {
-            
+
         }
     }
 }
