@@ -29,7 +29,10 @@ int main(int argc, string argv[])
             for (int i = 0; i < length; i++)
             {
                 // Transformando todo array em letras minúsculas para a comparação
-                if (argv[1][i])
+                if (isupper(argv[1][i]))
+                {
+                    
+                }
 
 
 
