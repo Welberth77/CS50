@@ -77,7 +77,8 @@ string criptografia(string plaintext, string chave)
     string ciphertext = plaintext;
     // Ciphertext (Texto criptografado)
     // Maiusculas e minusculas devem ser respeitados
-    for (int i = 0; i < 26; i++)
+    int length = strlen(ciphertext);
+    for (int i = 0; i < length; i++)
     {
         // Verificando se é alfabético
         if (isalpha(ciphertext[i]))
