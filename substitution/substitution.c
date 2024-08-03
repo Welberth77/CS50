@@ -35,6 +35,7 @@ int main(int argc, string argv[])
                     argv[1][i] = tolower(argv[1][i]);
                 }
 
+                // Loops para comparar e verificar se existem letras iguais
                 for (int j = i + 1; j < length; j++)
                 {
                     if (argv[1][i] == argv[1][j])
