@@ -76,7 +76,13 @@ string criptografia(string plaintext)
     {
         if (isalpha(plaintext[i]))
         {
-            
+            for (int j = 0; j < 26; j++)
+            {
+                if (plaintext[i] == alfabeto[j])
+                {
+                    
+                }
+            }
         }
     }
 }
