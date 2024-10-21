@@ -1,4 +1,4 @@
-#include <cs50.H>
+#include <cs50.h>
 #include <stdio.h>
 
 void draw(int n);
@@ -6,7 +6,7 @@ void draw(int n);
 int main(void)
 {
     // Pedindo altura
-    int height = geti_int("height: ");
+    int height = get_int("height: ");
     draw(height);
 }
 
