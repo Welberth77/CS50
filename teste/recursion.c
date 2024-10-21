@@ -13,6 +13,12 @@ int main(void)
 
 void draw(int n)
 {
+    // Se não tiver mais linhas
+    if ( n <= 0)
+    {
+        return;
+    }
+
     // Printa a pirâmide com altura n - 1
     draw(n - 1);
 
