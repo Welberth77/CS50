@@ -1,3 +1,4 @@
+// Aplicando recursão no código
 #include <cs50.h>
 #include <stdio.h>
 
@@ -12,12 +13,13 @@ int main(void)
 
 void draw(int n)
 {
+    // Printa a pirâmide com altura n - 1
+    draw(n - 1);
+
+    // Printa mais uma linha
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < i + 1; j++)
-        {
-            printf("#");
-        }
-        printf("\n");
+        printf("#");
     }
+    printf("\n");
 }
