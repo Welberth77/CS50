@@ -3,6 +3,7 @@
 
 int main(void)
 {
+    // Pedindo altura
     int height = geti_int("height: ");
     draw(height);
 }
