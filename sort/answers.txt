@@ -1,4 +1,4 @@
-sort1 uses: buble sort
+sort1 uses: bubble sort
 
 How do you know?: in the file sorted50000.txt, sort1 is faster than the others, and as the values ​​are already sorted, selection sort fits well into this issue
 
