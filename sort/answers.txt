@@ -1,4 +1,4 @@
-sort1 uses: selection sort
+sort1 uses: buble sort
 
 How do you know?: in the file sorted50000.txt, sort1 is faster than the others, and as the values ​​are already sorted, selection sort fits well into this issue
 
@@ -6,6 +6,6 @@ sort2 uses: merge sort
 
 How do you know?: in the file random50000.txt, sort2 was the fastest and fits well with the characteristics of merge sort
 
-sort3 uses: bubble sort
+sort3 uses: selection sort
 
 How do you know?: As I already knew both values, sort3 was what was left, so it will be buble sort
