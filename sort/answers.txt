@@ -8,4 +8,4 @@ How do you know?: in the file random50000.txt, sort2 was the fastest and fits we
 
 sort3 uses: selection sort
 
-How do you know?: As I already knew both values, sort3 was what was left, so it will be selection sort
+How do you know?: As I already knew both values, sort3 was what was left, so it will be selection sort, but it is also faster than sort1 in the reversed50000.txt file
