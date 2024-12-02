@@ -71,6 +71,7 @@ bool vote(string name)
         if (name == candidates[i].name){
             // Adicionar voto ao candidato
             candidates[i].votes += 1;
+            return true;
         }
     }
     return false;
