@@ -73,10 +73,8 @@ bool vote(string name)
             candidates[i].votes += 1;
             return true;
         }
-        else {
-            return false;
-        }
     }
+    return false;
 }
 
 // Calcular a contagem de votos e imprimir o ganhador
