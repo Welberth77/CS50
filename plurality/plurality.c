@@ -66,7 +66,8 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    for (int i = 0; i < strlen(candidate_count); i++){
+    for (int i = 0; i < candidate_count; i++){
+        // Comparar se o nome digitado é o mesmo do candidato no array
         if (name == candidates[i].name){
             // Adicionar voto ao candidato
             candidates[i].votes += 1;
