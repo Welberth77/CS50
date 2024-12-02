@@ -16,7 +16,7 @@ typedef struct
 candidate candidates[MAX];
 
 // Number of candidates
-int candidate_count;
+int candidate_count = strlen(candidates);
 
 // Function prototypes
 bool vote(string name);
@@ -66,7 +66,7 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    for (int i = 0; i < strlen(candidates); i++){
+    for (int i = 0; i < strlen(candidate_count); i++){
         if (name == candidates[i].name){
             // Adicionar voto ao candidato
             candidates[i].votes += 1;
