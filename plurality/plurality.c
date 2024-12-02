@@ -70,6 +70,8 @@ bool vote(string name)
     return false;
 }
 
+// Calcular a contagem de votos e imprimir o ganhador
+// Se tiver candidados empatados, deve printar todos empatados
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
