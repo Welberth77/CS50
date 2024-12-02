@@ -69,6 +69,7 @@ bool vote(string name)
     for (int i = 0; i < strlen(candidates); i++){
         if (name == candidates[i]){
             // Adicionar voto ao candidato
+            candidates[i].votes += 1;
         }
     }
     return false;
