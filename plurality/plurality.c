@@ -91,9 +91,11 @@ void print_winner(void)
         }
     }
 
+    // printar o 
     for (int i = 0; i < candidate_count; i++){
-        candidates[]
+        if (candidates[i].votes == maior_numero_votos){
+            printf("%s\n", candidates[i].name);
+        }
     }
-    // TODO
     return;
 }
