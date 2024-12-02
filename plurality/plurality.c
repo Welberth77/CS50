@@ -66,10 +66,12 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    for (int i = 0; i < candidate_count; i++){
+    for (int i = 0; i < candidate_count; i++)
+    {
         // Comparar se o nome digitado é o mesmo do candidato no array
         // Comparação de strings em c, usando a função strcmp
-        if (strcmp(name, candidates[i].name) == 0){
+        if (strcmp(name, candidates[i].name) == 0)
+        {
             // Adicionar voto ao candidato
             candidates[i].votes += 1;
             return true;
@@ -85,15 +87,19 @@ void print_winner(void)
 {
     // Saber o maior número de votos
     int maior_numero_votos = 0;
-    for (int i = 0; i < candidate_count; i++){
-        if (candidates[i].votes > maior_numero_votos){
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (candidates[i].votes > maior_numero_votos)
+        {
             maior_numero_votos = candidates[i].votes;
         }
     }
 
     // printar o cadidado ou candidatos com o maior número de votos
-    for (int i = 0; i < candidate_count; i++){
-        if (candidates[i].votes == maior_numero_votos){
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (candidates[i].votes == maior_numero_votos)
+        {
             printf("%s\n", candidates[i].name);
         }
     }
