@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 
-// Max number of candidates
+// Número máximo de candidados
 #define MAX 9
 
-// Candidates have name and vote count
+// Dicionario para contagem de votos de cada candidato
 typedef struct
 {
     string name;
