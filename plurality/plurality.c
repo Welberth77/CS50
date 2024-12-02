@@ -83,7 +83,17 @@ bool vote(string name)
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
+    // Saber o maior número de votos
+    int maior_numero_votos = 0;
+    for (int i = 0; i < candidate_count; i++){
+        if (candidates[i].votes > maior_numero_votos){
+            maior_numero_votos = candidates[i].votes;
+        }
+    }
 
+    for (int i = 0; i < candidate_count; i++){
+        candidates[]
+    }
     // TODO
     return;
 }
