@@ -69,7 +69,7 @@ bool vote(string name)
     for (int i = 0; i < candidate_count; i++){
         // Comparar se o nome digitado é o mesmo do candidato no array
         // Comparação de strings em c, usando a função strcmp
-        if (strcmp(name, condidates[i].name) == 0){
+        if (strcmp(name, candidates[i].name) == 0){
             // Adicionar voto ao candidato
             candidates[i].votes += 1;
             return true;
@@ -83,7 +83,7 @@ bool vote(string name)
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
-    
+
     // TODO
     return;
 }
