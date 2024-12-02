@@ -91,7 +91,7 @@ void print_winner(void)
         }
     }
 
-    // printar o 
+    // printar o cadidado ou candidatos com o maior número de votos
     for (int i = 0; i < candidate_count; i++){
         if (candidates[i].votes == maior_numero_votos){
             printf("%s\n", candidates[i].name);
