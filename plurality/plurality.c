@@ -16,7 +16,7 @@ typedef struct
 candidate candidates[MAX];
 
 // Number of candidates
-int candidate_count;
+int candidate_count = sizeof(candidates);
 
 // Function prototypes
 bool vote(string name);
