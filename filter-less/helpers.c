@@ -1,6 +1,7 @@
 #include "helpers.h"
 
 // Convert image to grayscale
+// Cinza (Preto e branco)
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
     return;
@@ -19,6 +20,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 }
 
 // Blur image
+// Desfocar imagem
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
     return;
