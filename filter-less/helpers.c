@@ -66,6 +66,13 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 // Imagem espelhada, inverter horizontalmente
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width; j++)
+        {
+            // Os valores das linhas devem ser totalmente invertidos
+        }
+    }
     return;
 }
 
