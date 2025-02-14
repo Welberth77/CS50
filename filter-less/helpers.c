@@ -71,8 +71,9 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; j < width; j++)
         {
             // Os valores das linhas devem ser totalmente invertidos
-            RGBTRIPLE temp[0][0] = image[i][j];
-            image[i][j - (j + 1)] = image[i][j];
+            RGBTRIPLE temp[][] = image[i][j];
+            temp = image[i][j - (j + 1)];
+            image[i][j] = temp;
         }
     }
     return;
