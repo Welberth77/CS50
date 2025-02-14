@@ -26,6 +26,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 
 // Convert image to sepia
 // Filtro meio amarelado (marrom avermelhado)
+// Existe um algoritmo que calcula quanto cada cor deve ter para ficar nesse filtro
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
     return;
