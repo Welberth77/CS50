@@ -6,6 +6,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
     // Calcular o valor média da cor rgb original
     // Definir a tonalidade do cinza baseado na média
+    // Lembrar da média ser apenas números inteiros
     return;
 }
 
