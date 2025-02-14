@@ -68,12 +68,15 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
     // Matriz temporaria
     int temp[height][width];
-    
+
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
         {
             // Os valores das linhas devem ser totalmente invertidos
+            temp[height][width] = image[i][j];
+            image[i][j - (j - 1)] = temp[i][j];
+            image[i][j] = 
 
         }
     }
