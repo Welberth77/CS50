@@ -11,7 +11,12 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; i < width; j++)
         {
             // Calculando a média do rgb original
+            int media = (image[i][j].rgbtRed + image[i][j].rgbtGreen + image[i][j].rgbtBlue) / 3;
 
+            // Alterando rgb para a escala cinza baseada na média
+            image[i][j].rgbtRed = media;
+            image[i][j].rgbtGreen = media;
+            image[i][j].rgbtBlue = media;
         }
     }
 
