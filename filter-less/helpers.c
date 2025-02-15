@@ -77,7 +77,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
         {
             // Os valores das linhas devem ser totalmente invertidos
             temp = image[i][j];
-            
+
             // invertendo todos os valores
             image[i][j] = image[i][width - j - 1];
             image[i][width - j - 1] = temp;
@@ -90,5 +90,20 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Desfocar imagem
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
+    // Cria uma cópia da imagem
+    RGBTRIPLE copy[height][width];
+
+    // Percorre cada linha
+    for (int i = 0; i < height; i++)
+    {
+        // Percorre cada coluna
+        for (int j = 0; j < width; j++)
+        {
+            // Copiando imagem
+            copy[i][j] = image[i][j];
+
+            
+        }
+    }
     return;
 }
