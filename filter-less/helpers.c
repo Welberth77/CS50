@@ -67,7 +67,7 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
     // Matriz temporaria
-    int temp[height][width];
+    RGBTRIPLE temp[height][width];
 
     for (int i = 0; i < height; i++)
     {
@@ -76,7 +76,6 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
             // Os valores das linhas devem ser totalmente invertidos
             temp[i][width - j - 1] = image[i][j];
             image[i][j] = temp[i][j];
-
         }
     }
     return;
