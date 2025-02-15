@@ -102,7 +102,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             // Copiando imagem
             copy[i][j] = image[i][j];
 
-            int media = copy[i + 1][j + 1];
+            int media = copy[i - i][j - j];
 
             image[i][j].rgbtRed;
             image[i][j].rgbtGreen;
