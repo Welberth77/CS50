@@ -102,6 +102,15 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             // Copiando imagem
             copy[i][j] = image[i][j];
 
+            int posicao1 = copy[i - 1][j - 1];
+            int posicao2 = copy[i - 1][j];
+            int posicao3 = copy[i - 1][j + 1];
+            int posicao4 = copy[i][j - 1];
+            // int posicao = copy[i][j];
+            int posicao5 = copy[i][j + 1];
+            int posicao6 = copy[i + 1][j - 1];
+            int posicao7 = copy[i][j]
+
             // Posições que devo pegar:
             // [-1, -1], [-1, 0], [-1, 1]
             // [0, -1],  [0, 0],  [0, 1]
