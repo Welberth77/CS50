@@ -92,6 +92,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 {
     // Cria uma cópia da imagem
     RGBTRIPLE copy[height][width];
+    int total;
 
     // Percorre cada linha
     for (int i = 0; i < height; i++)
@@ -104,7 +105,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 
             if (i - 1 >= 0 && j >= 0)
             {
-                
+                total += copy[i - 1][j].rgbtRed;
             }
 
             int posicao1 = copy[i - 1][j - 1];
