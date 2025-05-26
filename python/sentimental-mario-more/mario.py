@@ -20,8 +20,9 @@ for linhas in range(height):
         print("#", end="")
 
     # Fazer loop da escada para direita
+    # espaço do centro
     print(" ", end="")
-    for colunas in range(height - linhas - 1):
+    for colunas in range(linhas + 1):
         print("#", end="")
     print()
 
