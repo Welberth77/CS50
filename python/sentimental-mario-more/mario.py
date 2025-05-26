@@ -25,5 +25,3 @@ for linhas in range(height):
     for colunas in range(linhas + 1):
         print("#", end="")
     print()
-
-
