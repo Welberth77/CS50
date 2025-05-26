@@ -21,7 +21,7 @@ for linhas in range(height):
 
     # Fazer loop da escada para direita
     # espaço do centro
-    print(" ", end="")
+    print("  ", end="")
     for colunas in range(linhas + 1):
         print("#", end="")
     print()
