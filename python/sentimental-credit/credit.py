@@ -17,5 +17,7 @@ numeroCartao = get_int("Number: ")
 # 2 - Adicione a soma à soma dos dígitos que não foram multiplicados por 2.
 # 3 - Se o último dígito do total for 0 (ou, em termos mais formais, se o total módulo 10 for congruente a 0), o número é válido!
 
-for i in range(len(numeroCartao)):
-    print(numeroCartao[i])
+tamanhoNumero = len(str(numeroCartao))
+
+for digito in numeroCartao[-1]:
+    print(digito)
