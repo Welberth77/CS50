@@ -27,7 +27,4 @@ for i in range(1, len(numeroInvertido), 2):
     #Tranformamos em inteiro novamente para multiplicar
     lista.append(int(numeroInvertido[i]) * 2)
 
-# Vamos somar os valores, mas os valores so podem ir de 0 a 9
-
-print()
-print(f"A soma é {soma}")
+# Números com 2 digitos devem ser divididos 1 digito pra cada
