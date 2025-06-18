@@ -18,6 +18,8 @@ numeroCartao = get_int("Number: ")
 # 3 - Se o último dígito do total for 0 (ou, em termos mais formais, se o total módulo 10 for congruente a 0), o número é válido!
 
 tamanhoNumero = len(str(numeroCartao))
+numeroInvertido = str(numeroCartao)[::-1]
 
-for digito in numeroCartao[-1]:
-    print(digito)
+# Começa na penúltima posição e vai até o inicio de 2 em 2
+for i in range(0, len(numeroInvertido), 2):
+    print(numeroInvertido[i])
