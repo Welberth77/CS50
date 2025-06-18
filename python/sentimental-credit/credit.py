@@ -24,6 +24,7 @@ lista = []
 # Começa na penúltima posição e vai até o inicio de 2 em 2
 for i in range(1, len(numeroInvertido), 2):
     print(f"{numeroInvertido[i]}", end=" ")
+    #Tranformamos em inteiro novamente para multiplicar
     lista.append(int(numeroInvertido[i]) * 2)
 
-print(lista)
+print()
