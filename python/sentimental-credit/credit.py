@@ -26,8 +26,7 @@ for i in range(1, len(numeroInvertido), 2):
     print(f"{numeroInvertido[i]}", end=" ")
     #Tranformamos em inteiro novamente para multiplicar
     lista.append(int(numeroInvertido[i]) * 2)
-    print(lista)
 
-soma = sum(lista)
+# Vamos somar os dígitos, não os valores
 print()
-print(f"A soma é {soma}")
+print(f"A soma é {len(lista)}")
