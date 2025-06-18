@@ -24,7 +24,9 @@ lista = []
 # Começa na penúltima posição e vai até o inicio de 2 em 2
 for i in range(1, len(numeroInvertido), 2):
     print(f"{numeroInvertido[i]}", end=" ")
-    lista.append(numeroInvertido[i] * 2)
-    print(lista)
+    lista.append(numeroInvertido[i])
+    for j in lista:
+        lista[j] = lista[j] * 2
+        
 
 print(lista)
