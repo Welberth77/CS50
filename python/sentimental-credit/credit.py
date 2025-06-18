@@ -28,6 +28,6 @@ for i in range(1, len(numeroInvertido), 2):
     lista.append(int(numeroInvertido[i]) * 2)
 
 # Vamos somar os valores, mas os valores so podem ir de 0 a 9
-soma = sum(lista)
+
 print()
 print(f"A soma é {soma}")
