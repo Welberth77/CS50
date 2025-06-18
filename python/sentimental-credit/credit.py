@@ -22,4 +22,5 @@ numeroInvertido = str(numeroCartao)[::-1]
 
 # Começa na penúltima posição e vai até o inicio de 2 em 2
 for i in range(1, len(numeroInvertido), 2):
-    print(numeroInvertido[i])
+    print(f"{numeroInvertido[i]}", end=" ")
+print()
