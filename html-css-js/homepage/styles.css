@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding 20px;
+    width: 100vw;
+    height: 80vh;
+}
+
+.container {
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.titulo {
+    font-size: 40px;
+}
+
+.subtitulo {
+    font-size: 36px;
+}
+
+span {
+    color: blue;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.card-hover {
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.card-hover:hover {
+    border: solid 3px blue;
+}
+

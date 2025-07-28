@@ -1,0 +1,48 @@
+/* Fundo da barra de navegação */
+.bg-cinza {
+    background-color: #D3D3D3;
+    color: white;
+}
+
+/* Página atual ativada */
+.active-blue {
+    color: blue;
+    font-weight: 600;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+header {
+    text-align: center;
+    color: blue;
+    padding: 15px;
+    font-weight: 800;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 20px 40px;
+    height: auto;
+}
+
+main h2 {
+    font-size: 24px;
+}
+
+main p {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+

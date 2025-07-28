@@ -1,0 +1,53 @@
+/* Fundo da barra de navegação */
+.bg-cinza {
+    background-color: #D3D3D3;
+    color: white;
+}
+
+/* Página atual ativada */
+.active-blue {
+    color: blue;
+    font-weight: 600;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+header {
+    text-align: center;
+    color: blue;
+    padding: 15px;
+    font-weight: 800;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 10px 40px;
+    height: auto;
+}
+
+.tech-item {
+  background-color: #f8f9fa;
+  color: #212529;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.tech-item:hover {
+  background-color: blue;
+  color: white;
+}
+
+
+.bg-blue {
+    background-color: blue;
+}
+
