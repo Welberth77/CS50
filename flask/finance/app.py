@@ -30,11 +30,15 @@ def after_request(response):
     response.headers["Pragma"] = "no-cache"
     return response
 
-
+# Página principal
 @app.route("/")
 @login_required
 def index():
     """Show portfolio of stocks"""
+    # vizualizar o que comprou
+    # Quantas ações de caada ele tem, o preço atual, valor total
+    # Saldo atual do usuario
+    # Valor total de todas as ações
     return apology("TODO")
 
 
@@ -42,6 +46,13 @@ def index():
 @login_required
 def buy():
     """Buy shares of stock"""
+    # Formulário com o nome do symbol
+        # Quantas ações ele quer comprar
+        # Verificar se o user tem dinheiro para comprar
+        # Atualizar dinheiro
+
+    # Criar tabela para acompanhar quantas ações casa usuario possui
+    # id | nome da ação | quantidade | foreingid do user
     return apology("TODO")
 
 
@@ -49,6 +60,11 @@ def buy():
 @login_required
 def history():
     """Show history of transactions"""
+    # Ver o histórico de todas as transações
+    # Tabela com todas as trnsaçõe anteriores
+    # Quais ações foram compradas ou vendidas
+    # Quantas de cada ação foi compra ou vendida
+    # Quando a transação ocorreu
     return apology("TODO")
 
 
@@ -101,22 +117,81 @@ def logout():
     # Redirect user to login form
     return redirect("/")
 
-
+# Cotações de ações
 @app.route("/quote", methods=["GET", "POST"])
 @login_required
 def quote():
     """Get stock quote."""
-    return apology("TODO")
+    if request.method == "POST":
+        # Verificação do symbol
+        if not request.form.get("symbol"):
+            return apology("must provide symbol")
+
+        # Se symbol não existir
+
+        # Retornar nome, preço e simbolo da ação em uma página html
+
+    # GET
+    else:
+        return render_template("quote.html")
 
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
-    return apology("TODO")
+    if request.method == "POST":
+        # Validar os dados
+        # Obterndo dados
+        username = request.form.get("username")
+        password = request.form.get("password")
+        confPassword = request.form.get("conf-password")
+
+        # Verificar entrda de nome
+        if not username:
+            return apology("must provide username", 403)
+
+        # Verificar entrada de senha
+        elif not password:
+            return apology("must provide password", 403)
+
+        # Verificar entrada de confirmação de senha
+        elif not confPassword:
+            return apology("must provide password confirmation", 403)
+
+        # Verificar se senha e confirmação de senha são iguais
+        elif password != confPassword:
+            return apology("password and password confirmation is different", 403)
+
+        # Verificar se nome de usuario ja existe no banco de dados
+        if len(db.execute("SELECT username FROM users WHERE username = ?", username)) != 0:
+            return apology("This username already exists")
+
+        # Gerando hash para a senha e o armazenamento ser seguro
+        hashPassword = generate_password_hash(password)
+
+        # Adicionando ao banco de dados
+        db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, hashPassword)
+
+        # Retornando para a página de login
+        return redirect("/login")
+
+    # Metodo get, apenas mostrar a página
+    else:
+        return render_template("register.html")
 
 
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
 def sell():
     """Sell shares of stock"""
+    # Venda de ações
+    # Vizualizar ações que tem e escollher qual vender e a quantidade
+        # Saber se o usuário realmente tem aquele número de ações
+        # Ter certeza que não pode vender um número negativo de ações
+
     return apology("TODO")
+
+# Projetar algo novo para o site
+# Aumentar cash
+# Alterar senha
+# Você decide isso
