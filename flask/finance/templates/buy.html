@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+    <form action="/buy" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="symbol" placeholder="Symbol" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="shares" placeholder="Shares" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Buy</button>
+    </form>
+
+    {% if stock %}
+        <hr>
+        <h4>Resumo da Compra</h4>
+        <p><strong>Empresa:</strong> {{ stock.name }} ({{ stock.symbol }})</p>
+        <p><strong>Preço por ação:</strong> ${{ stock.price | round(2) }}</p>
+        <p><strong>Quantidade:</strong> {{ shares }}</p>
+        <p><strong>Total da compra:</strong> ${{ total | round(2) }}</p>
+
+        <form action="/confirm_buy" method="post">
+            <input type="hidden" name="symbol" value="{{ stock.symbol }}">
+            <input type="hidden" name="quantity" value="{{ shares }}">
+            <button class="btn btn-success mt-3" type="submit">Confirmar Compra</button>
+        </form>
+    {% endif %}
+{% endblock %}

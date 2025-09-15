@@ -1,0 +1,27 @@
+/* Navbar links */
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+/* Link ativo */
+.navbar-nav .nav-link.active {
+    color: white !important;
+    font-weight: bold;
+    text-decoration: underline; /* opcional, só para destacar */
+}
+
+/* Navbar form search */
+.navbar .form-control {
+  background-color: white; /* fundo branco */
+  color: black;            /* texto preto */
+}
+
+/* Hover */
+.navbar-nav .nav-link:hover {
+    color: #FFD700 !important; /* amarelo no hover */
+}
+
+.pizza-img {
+  height: 200px;      /* altura padrão */
+  object-fit: cover;  /* corta e centraliza a imagem */
+}

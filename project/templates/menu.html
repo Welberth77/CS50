@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Menu{% endblock %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h2 class="text-center text-danger fw-bold mb-4">All pizzas</h2>
+        <div class="row">
+            {% for pizza in pizzas %}
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="{{ pizza.imagem }}" class="card-img-top pizza-img" alt="{{ pizza.nome }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ pizza.nome }}</h5>
+                        <p class="card-text">{{ pizza.descricao }}</p>
+                        <p class="card-text">Preparation time: <strong>{{ pizza.tempo_preparo }} min</strong></p>
+                        <h5 class="card-text fw-bold text-success">R$ {{ "%0.2f" | format(pizza.preco) | replace(".", ",") }}</h5>
+
+                        <form method="post" action="/add_cart">
+                            <!-- Retorna a página que está -->
+                            <input type="hidden" name="page" value="{{ request.path }}">
+                            <input type="hidden" name="pizza_id" value="{{ pizza.id }}">
+                            <div class="d-flex align-items-end gap-3 mb-3">
+                                <!-- Quantidade -->
+                                <div class="w-30">
+                                    <label class="form-label fw-bold">Quantity:</label>
+                                    <input type="number" class="form-control quantidade" name="quantity" min="1" max="99" value="1">
+                                </div>
+                                <!-- Botão -->
+                                <div class=flex-grow-1>
+                                    <button type="submit" class="btn btn-success w-100">Add to Cart</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
