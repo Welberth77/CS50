@@ -12,9 +12,9 @@
                 <h5>{{ item['nome'] }}</h5>
                 <p>Unit price: R$ {{ item['preco_unitario'] }}</p>
                 <p>quantity: {{ item['quantidade'] }}</p>
-                <p>Total: R$ {{ item['preco_total'] }}</p>
+                <p>Total: R$ {{ "%0.2f"|format(item['preco_total'])|replace(".", ",") }}</p>
                 <p>Preparation time: {{ item['tempo_preparo_total'] }} min</p>
-                
+
                 <!-- Botão excluir -->
                 <form method="POST" action="/delete_item_cart">
                     <input type="hidden" name="item_id" value="{{ item['id'] }}">
