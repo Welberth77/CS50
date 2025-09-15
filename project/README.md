@@ -132,3 +132,13 @@ Through these challenges, I strengthened skills in **full-stack development, dat
 This **Online Pizza Ordering System** demonstrates the complete workflow from browsing the menu to finalizing an order, including price calculation and preparation time estimation. It showcases technical skills in web development and practical application, providing a strong foundation for future projects or real-world deployment.
 
 By completing this as the **CS50 final project**, it highlights both problem-solving ability and practical implementation skills, making it a comprehensive example of a full-stack web application.
+
+---
+
+## Acknowledgements
+
+I would like to sincerely thank everyone who contributed to the completion of this project. First and foremost, I am grateful to the instructors and staff of the **CS50 course** for providing such a comprehensive and challenging learning experience. The course offered not only theoretical knowledge but also practical exercises that greatly enhanced my understanding of computer science and programming concepts.
+
+I also want to thank the online community and fellow students who shared ideas, tips, and resources throughout the project. Their support and collaboration were invaluable in overcoming challenges related to web development, database management, and user interface design.
+
+Finally, I am thankful for the opportunity to work on a real-world project that combines multiple aspects of programming and software development. This experience has strengthened my skills, boosted my confidence, and motivated me to continue learning and building innovative projects in the future.
