@@ -135,6 +135,17 @@ By completing this as the **CS50 final project**, it highlights both problem-sol
 
 ---
 
+## Final Project Video
+
+For a complete demonstration of this **Online Pizza Ordering System**, you can watch the final project video on YouTube:
+
+[Watch the CS50 Final Project Video](https://youtu.be/cFUfWQkv9wg)
+
+The video showcases the full workflow of the system, including browsing the menu, adding pizzas to the cart, calculating the total price, estimating preparation time, and completing an order. Watching it will provide a clearer understanding of the functionalities implemented and the user experience provided by the application.
+
+
+---
+
 ## Acknowledgements
 
 I would like to sincerely thank everyone who contributed to the completion of this project. First and foremost, I am grateful to the instructors and staff of the **CS50 course** for providing such a comprehensive and challenging learning experience. The course offered not only theoretical knowledge but also practical exercises that greatly enhanced my understanding of computer science and programming concepts.
