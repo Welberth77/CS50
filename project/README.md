@@ -97,3 +97,38 @@ This project demonstrates the ability of a single developer to create a full-sta
    - Improves accessibility and usability for all users.
 
 ---
+
+## Challenges and Learning Outcomes
+
+During development, several challenges were encountered:
+
+- **Dynamic Data Handling:**
+  Loading menu items and updating cart totals required careful database queries and logic in Flask.
+
+- **User Interface:**
+  Creating a responsive, intuitive design that works on multiple devices with Bootstrap.
+
+- **Input Validation:**
+  Ensuring that the checkout form collects complete and valid information.
+
+- **Time Calculation Logic:**
+  Converting total preparation minutes into hours and minutes to improve readability.
+
+Through these challenges, I strengthened skills in **full-stack development, database management, Python programming, and problem-solving**.
+
+---
+
+## Future Improvements
+
+- **Payment Integration:** Support for online payments using APIs like Stripe or PayPal.
+- **Order Tracking:** Real-time updates on order status for customers.
+- **Multi-user Support:** Allow multiple simultaneous orders with proper session management.
+- **Enhanced UX:** Adding animations, images, and additional information for each pizza.
+
+---
+
+## Conclusion
+
+This **Online Pizza Ordering System** demonstrates the complete workflow from browsing the menu to finalizing an order, including price calculation and preparation time estimation. It showcases technical skills in web development and practical application, providing a strong foundation for future projects or real-world deployment.
+
+By completing this as the **CS50 final project**, it highlights both problem-solving ability and practical implementation skills, making it a comprehensive example of a full-stack web application.
