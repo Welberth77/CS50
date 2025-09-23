@@ -90,48 +90,50 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Desfocar imagem
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-    // Cria uma cópia da imagem
     RGBTRIPLE copy[height][width];
-    int total;
 
-    // Percorre cada linha
+    // Copiar a imagem original para não perder valores enquanto calcula
     for (int i = 0; i < height; i++)
     {
-        // Percorre cada coluna
         for (int j = 0; j < width; j++)
         {
-            // Copiando imagem
             copy[i][j] = image[i][j];
-
-            if (i - 1 >= 0 && j >= 0)
-            {
-                total += copy[i - 1][j].rgbtRed;
-            }
-
-            int posicao1 = copy[i - 1][j - 1];
-            int posicao2 = copy[i - 1][j];
-            int posicao3 = copy[i - 1][j + 1];
-            int posicao4 = copy[i][j - 1];
-            // int posicao = copy[i][j];
-            int posicao5 = copy[i][j + 1];
-            int posicao6 = copy[i + 1][j - 1];
-            int posicao7 = copy[i + 1][j];
-            int posicao8 = copy[i + 1][j + 1];
-
-            // Posições que devo pegar:
-            // [-1, -1], [-1, 0], [-1, 1]
-            // [0, -1],  [0, 0],  [0, 1]
-            // [1, -1],  [1, 0],  [1, 1]
-
-            if (i-1 >= 0 && j-1 >=0)
-            {
-
-            }
-
-            image[i][j].rgbtRed;
-            image[i][j].rgbtGreen;
-            image[i][j].rgbtBlue;
         }
     }
-    return;
+
+    // Percorrer cada pixel
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width; j++)
+        {
+            int totalRed = 0;
+            int totalGreen = 0;
+            int totalBlue = 0;
+            int count = 0;
+
+            // Verificar os vizinhos (3x3)
+            for (int di = -1; di <= 1; di++)
+            {
+                for (int dj = -1; dj <= 1; dj++)
+                {
+                    int ni = i + di;
+                    int nj = j + dj;
+
+                    // Validar se o vizinho está dentro dos limites
+                    if (ni >= 0 && ni < height && nj >= 0 && nj < width)
+                    {
+                        totalRed += copy[ni][nj].rgbtRed;
+                        totalGreen += copy[ni][nj].rgbtGreen;
+                        totalBlue += copy[ni][nj].rgbtBlue;
+                        count++;
+                    }
+                }
+            }
+
+            // Média arredondada
+            image[i][j].rgbtRed = round((float) totalRed / count);
+            image[i][j].rgbtGreen = round((float) totalGreen / count);
+            image[i][j].rgbtBlue = round((float) totalBlue / count);
+        }
+    }
 }
